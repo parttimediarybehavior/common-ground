@@ -1,0 +1,1419 @@
+<!doctype html>
+<html lang="en">
+<head><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'none'; object-src 'none'; base-uri 'none'"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Common Ground · The Casebook</title><style>:root{--paper:#f5f2e8;--card:#fffdf6;--ink:#193f43;--muted:#657572;--line:#d5d9cc;--green:#285f52;--ochre:#b67a39}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:14px/1.6 Arial,Helvetica,sans-serif}.masthead{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:21px 5%;border-bottom:1px solid var(--line)}.brand{color:var(--ink);font-size:13px;letter-spacing:2px;font-weight:bold;text-decoration:none;line-height:1.4}.brand>span{font-size:25px;vertical-align:middle;margin-right:9px}.brand small{font-size:9px;letter-spacing:1.6px;margin-left:22px;color:var(--muted)}#progress{font-size:11px;color:var(--green);margin:0;white-space:nowrap}main{max-width:1370px;margin:auto;padding:0 5%}.welcome{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:37px 0 27px}.eyebrow{font-size:10px;letter-spacing:1.8px;font-weight:bold;line-height:1.4;margin:0 0 9px}.welcome h1{font:normal clamp(30px,3.4vw,46px)/1.2 Georgia,serif;letter-spacing:-1px;margin:0 0 10px}.welcome p:last-child{margin:0;color:var(--muted);font-size:13px}.folio-mark{font:40px/1 Georgia,serif;color:#9fa993;text-align:center;border-left:1px solid var(--line);padding:0 0 0 28px}.folio-mark small{font:8px Arial;letter-spacing:2px}.case-covers{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:13px;margin-bottom:27px}.case-cover{display:flex;align-items:start;gap:12px;text-align:left;padding:16px;background:#eeeee1;border:1px solid var(--line);border-radius:6px;cursor:pointer;color:var(--ink);font:inherit;min-width:0}.case-cover:hover{border-color:var(--green);background:#e7ecdf}.case-cover.active{background:var(--card);border-color:var(--green);box-shadow:inset 0 3px var(--green)}.cover-number{font:24px Georgia,serif;color:#98a18b;line-height:1.3}.cover-copy{display:block;min-width:0}.cover-copy strong{font:19px Georgia,serif;display:block;margin:0 0 6px}.cover-copy small{display:block;font-size:10px;color:var(--muted);line-height:1.5}.cover-state{display:block;font-size:9px;font-weight:bold;letter-spacing:1px;color:var(--green);margin-top:8px}.case-sheet{border:1px solid var(--line);border-radius:9px;background:var(--card);padding:26px}.case-heading{display:flex;justify-content:space-between;align-items:start;gap:18px;padding-bottom:21px;border-bottom:1px solid var(--line)}.case-heading h2{font:36px/1.2 Georgia,serif;margin:0 0 8px}.case-subtitle{margin:0;color:var(--muted);font-size:12px}.case-status{background:#e9ede1;font-size:9px;letter-spacing:1.2px;padding:7px 9px;border-radius:3px;white-space:nowrap}.investigation-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(290px,1fr);gap:29px;padding-top:23px}.brief .question{font:22px/1.4 Georgia,serif;color:var(--ink);margin:0 0 12px}.brief>p:not(.question){font-size:13px;color:var(--muted);line-height:1.7;margin:0 0 15px}details summary{cursor:pointer;font-size:12px;font-weight:bold;line-height:1.6}.rules{padding:11px 13px;border:1px solid var(--line);border-radius:4px;background:#f2f3e9}.rules ul,.unchanged ul{padding-left:18px;font-size:12px;color:var(--muted);margin:9px 0 3px}.rules li,.unchanged li{margin-bottom:6px}.map-panel{margin:22px 0 26px;border:1px solid var(--line);border-radius:6px;overflow:hidden}.map-caption{display:flex;align-items:center;justify-content:space-between;padding:12px 13px;gap:10px}.map-caption .eyebrow{font-size:9px;margin:0}.map-caption>span{font-size:9px;color:var(--muted)}#case-map{display:block;background:#cde2df;width:100%;aspect-ratio:1.5}.map-panel figcaption{padding:12px 14px;background:#f3f4e9}.map-legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:9px;color:var(--muted);margin-bottom:8px}.map-legend i{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px}.map-legend .food{background:#b39945}.map-legend .wood{background:#5b8158}#map-markers{padding-left:18px;margin:0;font-size:11px;line-height:1.65}#map-markers li{margin-bottom:3px}.section-heading{display:flex;align-items:center;justify-content:space-between;gap:10px}.section-heading .eyebrow{margin-bottom:7px}h3{font:23px/1.3 Georgia,serif;font-weight:normal;margin:0 0 13px}.section-heading h3{margin:0}.section-heading>p{font-size:10px;color:var(--muted)}.section-note{font-size:12px;color:var(--muted);margin:9px 0 16px}.clue-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}.clue-card{border:1px solid var(--line);border-radius:5px;background:#fcfbf4;overflow:hidden;min-width:0}.clue-card.pinned{border-color:var(--ochre);box-shadow:inset 0 3px var(--ochre)}.clue-toggle{display:block;width:100%;border:0;background:transparent;text-align:left;padding:15px;cursor:pointer;color:var(--ink);font:inherit}.clue-toggle small{display:block;font-size:9px;color:var(--muted);letter-spacing:.9px;margin-bottom:6px}.clue-toggle strong{display:block;font:17px/1.35 Georgia,serif}.clue-toggle .open-label{font-size:10px;letter-spacing:0;margin:10px 0 0;color:var(--green)}.clue-body{padding:0 15px 15px;font-size:12px;line-height:1.7;color:var(--muted)}.clue-body>p{margin:0 0 11px}.clue-rows{margin:0 0 12px}.clue-rows>div{padding:6px 0;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:5px}.clue-rows dt{font-size:10px}.clue-rows dd{margin:0;color:var(--ink);font-weight:bold;font-size:11px}button:not(.case-cover):not(.clue-toggle),.replay-link{border:1px solid #cbd4c4;border-radius:4px;background:#fffdf6;color:var(--ink);padding:9px 11px;font:12px/1.4 Arial,Helvetica,sans-serif;cursor:pointer}.pin-button[aria-pressed=true]{background:#efe4cf!important;border-color:var(--ochre)!important}button:hover:not(:disabled):not(.case-cover):not(.clue-toggle){background:#e8eddf}button.primary{background:var(--green)!important;border-color:var(--green)!important;color:white!important;width:100%;padding:12px 15px!important}button.primary:hover:not(:disabled){background:#1a4c40!important}button:disabled{opacity:.48;cursor:default}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--ochre);outline-offset:3px}.reasoning-column{min-width:0}.workpad,.reconstruction{border:1px solid var(--line);border-radius:6px;padding:20px;margin-bottom:17px}.workpad{background:#f0f1e6}.reconstruction{background:#f9f8ef}fieldset{padding:0;border:0;margin:0}.choice{display:flex;align-items:start;gap:10px;font-size:12px;line-height:1.6;padding:11px 0;border-top:1px solid #d9dece;cursor:pointer}.choice input{accent-color:var(--green);margin:4px 0 0;flex-shrink:0}.choice span{min-width:0;overflow-wrap:anywhere}.pinned-heading{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);margin-top:14px;padding-top:17px}.pinned-heading .eyebrow{margin:0}.pinned-heading>span{font-size:10px;color:var(--muted)}#pinned-clues{list-style:none;padding:0;margin:10px 0 0}#pinned-clues li{font-size:11px;display:flex;justify-content:space-between;align-items:center;gap:9px;margin:7px 0}#pinned-clues .empty{color:var(--muted)}#pinned-clues button{padding:4px 7px!important;font-size:10px!important}.reconstruction>p:not(.eyebrow){font-size:12px;color:var(--muted);line-height:1.7;margin:0 0 13px}.unchanged{margin-bottom:14px}.hint{font-size:11px;color:var(--muted);margin:9px 0 0;line-height:1.6}.test-result:not(:empty){margin-top:17px;border-top:1px solid var(--line);padding-top:16px}.test-result h4{font:20px/1.3 Georgia,serif;margin:0 0 9px}.test-result>p{font-size:12px;line-height:1.7;margin:0 0 12px}.test-result dl{margin:0}.test-result dl>div{border-top:1px solid var(--line);padding:7px 0;font-size:11px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px}.test-result dt{color:var(--muted)}.test-result dd{margin:0;font-weight:bold}.submission{padding:2px 0 4px}#feedback{font-size:12px;line-height:1.7;margin:13px 0 0;padding:0}#feedback:not(:empty){border-left:3px solid var(--ochre);padding-left:12px}.resolution{margin-top:25px;border-top:2px solid var(--green);padding:24px;background:#edf0e4;border-radius:5px}.resolution h3{font-size:29px}.resolution>p:not(.eyebrow){font-size:13px;line-height:1.8}.resolution ol{padding-left:20px;font-size:12px;line-height:1.8}.resolution li{margin-bottom:7px}.resolution-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:19px}.replay-link{display:inline-block;text-decoration:none}.notice{font-size:12px;color:var(--green);min-height:20px;margin:15px 0 19px}footer{display:flex;justify-content:space-between;gap:18px;border-top:1px solid var(--line);padding:21px 0 28px;font-size:9px;letter-spacing:.7px;color:var(--muted)}.sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}@media(max-width:950px){.investigation-grid{grid-template-columns:minmax(0,1fr) minmax(280px,.95fr);gap:20px}.case-sheet{padding:20px}.clue-cards{grid-template-columns:1fr}.brand small{display:block;margin-left:38px}.cover-copy small{font-size:9px}}@media(max-width:700px){.investigation-grid{grid-template-columns:1fr}.reasoning-column{margin-top:3px}.clue-cards{grid-template-columns:1fr 1fr}.welcome{padding-top:27px}.welcome h1{font-size:33px}.folio-mark{display:none}.case-covers{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.case-cover{display:block;padding:12px 10px}.cover-number{font-size:17px}.cover-copy strong{font-size:17px;margin-top:5px}.cover-copy small{display:none}.cover-state{font-size:8px;letter-spacing:.5px}.case-heading h2{font-size:31px}.case-status{font-size:8px;padding:6px}.map-caption>span{max-width:110px;text-align:right}.case-heading{gap:10px}footer{flex-direction:column;gap:7px}}@media(max-width:420px){.masthead{padding:15px 5%;gap:10px}.brand{font-size:10px;letter-spacing:1.2px}.brand>span{font-size:21px;margin-right:6px}.brand small{font-size:8px;margin-left:29px}#progress{font-size:9px}.welcome .eyebrow{font-size:9px}.welcome h1{font-size:30px}.welcome p:last-child{font-size:12px}.case-sheet{padding:16px}.case-heading{display:block}.case-status{display:inline-block;margin-top:13px}.case-heading h2{font-size:30px}.brief .question{font-size:20px}.clue-cards{grid-template-columns:1fr}.workpad,.reconstruction{padding:16px}.map-caption .eyebrow{font-size:8px}.map-caption>span{font-size:8px;max-width:100px}.cover-copy strong{font-size:15px}.case-cover{padding:10px 7px}.cover-state{font-size:7px}.resolution{padding:17px}.resolution h3{font-size:25px}}
+@media(max-width:700px){.pin-button,#pinned-clues button{min-height:40px}.choice{min-height:44px}}
+
+#map-bridge-state{color:var(--ink);font-weight:bold}
+.test-selector-label{display:block;font-size:11px;font-weight:bold;margin-bottom:6px}#reconstruction-choice{display:block;width:100%;min-width:0;white-space:normal;margin:0 0 13px;padding:10px;border:1px solid #cbd4c4;border-radius:4px;background:#fffdf6;color:var(--ink);font:12px Arial,Helvetica,sans-serif}#reconstruction-choice:focus-visible{outline:3px solid var(--ochre);outline-offset:3px}#test-history:not(:empty){padding-top:15px;margin-top:16px;border-top:1px solid var(--line)}.detail-label{font-size:9px;font-weight:bold;letter-spacing:1.3px;margin:0 0 8px}.test-history-buttons{display:flex;flex-wrap:wrap;gap:7px}.test-history-buttons button{font-size:10px!important}.test-history-buttons button[aria-pressed=true]{background:#e7ecdc!important;border-color:var(--green)!important}.recorded-prediction,.current-prediction{font-size:11px!important;color:var(--muted)}
+.replay-visual{border-top:1px solid var(--line);margin-top:18px;padding-top:17px}.frame-controls{display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px;margin-bottom:13px}.frame-controls label{font-size:11px}.frame-day{font-size:11px;color:var(--green);font-weight:bold}.frame-controls input{grid-column:1/-1;width:100%;margin:0;accent-color:var(--green);min-height:26px}.frame-views{display:grid;grid-template-columns:1fr 1fr;gap:9px}.frame-card{margin:0;min-width:0;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#fffdf6}.frame-card figcaption{font-size:10px;padding:8px;color:var(--green);font-weight:bold;line-height:1.5}.frame-card[data-branch=replay] figcaption{color:#aa613b}.frame-map{display:block;width:100%;aspect-ratio:1.5;background:#cde2df}.frame-stats{font-size:10px;margin:0;padding:8px}.frame-stats>div{display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px;margin:4px 0}.frame-stats dt{color:var(--muted)}.frame-stats dd{margin:0;font-weight:bold}.frame-note{font-size:10px!important;color:var(--muted);margin:10px 0 0!important;line-height:1.6!important}@media(max-width:420px){.frame-views{grid-template-columns:1fr}.frame-card figcaption,.frame-stats{font-size:11px}.frame-controls input{min-height:36px}}
+
+.ordered-evidence{border-top:1px solid var(--line);padding-top:17px;margin-top:18px}.ordered-note{font-size:11px;line-height:1.7;color:var(--muted);margin:0 0 13px}.ordered-branch{border:1px solid var(--line);border-radius:4px;background:#fffdf6;margin:9px 0}.ordered-branch summary{padding:11px 12px;font-size:12px}.ordered-content{padding:0 12px 13px;min-width:0}.ordered-steps{padding-left:19px;margin:3px 0 17px}.ordered-steps>li{margin-bottom:15px}.ordered-steps h5{font-size:11px;font-weight:bold;line-height:1.5;margin:0 0 7px}.ordered-steps dl{margin:0;font-size:11px}.ordered-steps dl>div{border-top:1px solid var(--line);padding:6px 0;display:flex;flex-wrap:wrap;gap:4px;justify-content:space-between}.ordered-steps dt{color:var(--muted)}.ordered-steps dd{margin:0;overflow-wrap:anywhere;max-width:100%}.ordered-receipts{padding-left:16px;margin:0;font-size:11px;line-height:1.75;overflow-wrap:anywhere}.ordered-receipts li{margin:7px 0}
+
+.how-it-works{margin:0 0 24px;padding:16px 20px;border:1px solid var(--line);background:var(--paper);border-radius:6px}.how-it-works h2{font:600 18px Georgia,serif;margin:0 0 8px}.how-it-works p{font-size:12px;line-height:1.7;margin:5px 0}.how-it-works .session-note{font-size:11px;color:var(--muted)}.map-legend .food{border-radius:50%}.map-legend .wood{transform:rotate(45deg);width:7px;height:7px}footer a{color:var(--green);font-size:11px}
+</style></head>
+<body>
+<header class="masthead"><a class="brand" href="#case-covers"><span aria-hidden="true">◈</span> COMMON GROUND <small>THE CASEBOOK</small></a><p id="progress" aria-live="polite">Opening the casebook…</p></header>
+<main>
+<section class="welcome"><div><p class="eyebrow">FIELD NOTES FROM A SMALL WORLD</p><h1>Every change leaves a trace.</h1><p>Pull one thread in a simulated island, replay the same world, and see whether you were right. Start with The Untaken Harvest, or choose The Detour for a short tutorial.</p></div><span class="folio-mark" aria-hidden="true"><span id="folio-count"></span><br><small>CASE FILES</small></span></section>
+<section class="how-it-works" aria-label="How an investigation works"><h2>How a case works</h2><p>Inspect clues and pin two records. Choose an explanation and a controlled change, record your prediction (uncertain is welcome), then run the replay. Compare the result, revise your conclusion and submit.</p><p class="session-note">Progress lasts for this page session. Refreshing or reopening starts over. Resolved cases can export their full replay to the sandbox.</p></section>
+<nav id="case-covers" class="case-covers" aria-label="Choose a case"></nav>
+<section id="case-sheet" class="case-sheet" aria-label="Active investigation">
+<div class="case-heading"><div><p id="case-number" class="eyebrow"></p><h2 id="case-title"></h2><p id="case-subtitle" class="case-subtitle"></p></div><span id="case-status" class="case-status">OPEN CASE</span></div>
+<div class="investigation-grid"><div class="evidence-column"><section class="brief"><p id="case-question" class="question"></p><p id="case-brief"></p><details class="rules"><summary>Known world rules</summary><ul id="case-rules"></ul></details></section>
+<figure class="map-panel"><div class="map-caption"><p class="eyebrow">THE RELEVANT GROUND</p><span>Numbered marks match the notes below</span></div><canvas id="case-map" role="img" aria-label="Case map; numbered markers are listed below"></canvas><figcaption><div class="map-legend"><span><i class="food"></i> Food · circle</span><span><i class="wood"></i> Timber · diamond</span><span id="map-bridge-state"></span></div><ol id="map-markers"></ol></figcaption></figure>
+<section class="clue-section"><div class="section-heading"><div><p class="eyebrow">INSPECT THE RECORD</p><h3>The evidence</h3></div><p id="clue-progress"></p></div><p class="section-note">Open any clue. Pin two that support your explanation.</p><div id="clue-cards" class="clue-cards"></div></section></div>
+<aside class="reasoning-column" aria-label="Your investigation"><section class="workpad"><p class="eyebrow">YOUR WORKING THEORY</p><h3>What explains the outcome?</h3><form id="hypothesis-form"><fieldset><legend class="sr-only">Choose a hypothesis</legend><div id="hypotheses"></div></fieldset></form><div class="pinned-heading"><p class="eyebrow">PINNED EVIDENCE</p><span id="pin-count">0 / 2</span></div><ul id="pinned-clues"></ul></section>
+<section class="reconstruction"><p class="eyebrow">CONTROLLED RECONSTRUCTION</p><h3>Try one change.</h3><label class="test-selector-label" for="reconstruction-choice">Choose a reconstruction</label><select id="reconstruction-choice"><option value="">Choose a controlled change…</option></select><p id="reconstruction-prompt"></p><details class="unchanged"><summary>What stays the same</summary><ul id="reconstruction-unchanged"></ul></details><form id="prediction-form"><fieldset><legend class="sr-only">Choose a prediction</legend><div id="predictions"></div></fieldset></form><button id="run-test" class="primary" disabled>Test this prediction</button><p id="test-hint" class="hint">Choose a reconstruction and record a prediction first.</p><div id="test-history"></div><div id="test-result" class="test-result" aria-live="polite"></div></section>
+<section class="submission"><button id="submit-case" class="primary" disabled>Submit your explanation</button><p id="submission-hint" class="hint"></p><p id="feedback" role="status" aria-live="polite"></p></section></aside></div>
+<section id="resolution" class="resolution" aria-live="polite" hidden></section>
+</section>
+<p id="notice" class="notice" role="status" aria-live="polite"></p>
+<footer><a href="./standalone.html">Explore the island sandbox ↗</a><span>COMMON GROUND · EXPERIMENTAL CASEBOOK</span><span>Programmed rules. Recorded evidence. No generated witnesses.</span></footer>
+</main><script type="module">// Experimental rule-driven world. No LLM output changes physical state.
+// Random draws are keyed, so interventions cannot shift a global random stream.
+function draw(seed, day, id, purpose) {
+  let h = 2166136261;
+  for (const ch of `${seed}:${day}:${id}:${purpose}`) { h ^= ch.charCodeAt(0); h = Math.imul(h,16777619); }
+  h ^= h >>> 16; h = Math.imul(h,2246822507); h ^= h >>> 13;
+  return (h >>> 0) / 4294967296;
+}
+const names = ['Ada','Bram','Cleo','Dara','Eli','Fern','Gus','Hana','Ivo','June','Kit','Luz','Moss','Nell','Orin','Pip'];
+const key = (p,w) => p.y*w.width+p.x;
+const distance = (a,b) => Math.abs(a.x-b.x)+Math.abs(a.y-b.y);
+const foodIn = w => w.cells.reduce((n,c)=>n+(c.resource==='food'?c.stock:0),0)+w.agents.reduce((n,a)=>n+a.food,0)+w.settlements.reduce((n,s)=>n+s.food,0);
+const woodIn = w => w.cells.reduce((n,c)=>n+(c.resource==='wood'?c.stock:0),0)+w.agents.reduce((n,a)=>n+a.wood,0);
+
+function createWorld(seed=42, options={}) {
+  if (!Number.isSafeInteger(Number(seed))) throw new Error('Seed must be a safe integer.');
+  const w={version:1,seed:Number(seed),day:0,width:24,height:16,cells:[],agents:[],
+    settlements:[{id:0,name:'Mossbank',x:4,y:8,food:8},{id:1,name:'Sunreach',x:19,y:8,food:8}],
+    bridge:{x:11,y:8,open:true,repair:0,required:18},drought:null,events:[],blockedReports:[],
+    ledger:{initialFood:0,produced:0,consumed:0,lost:0,initialWood:0,woodProduced:0,woodUsed:0},
+    statistics:{travel:0,foodGathered:0,emptyArrivals:0,reports:0,harvests:0,observations:0},
+    options:{memory:true,sharing:true,travelSteps:2,knowledge:'oracle',...options}};
+  if(!['oracle','local','reports'].includes(w.options.knowledge))throw new Error('Unknown knowledge mode.');
+  if (!Number.isInteger(w.options.travelSteps)||w.options.travelSteps<1||w.options.travelSteps>8) throw new Error('Travel steps must be 1–8.');
+  for(let y=0;y<w.height;y++)for(let x=0;x<w.width;x++) {
+    const river=x===11||x===12;
+    const coast=x===0||x===23||y===0||y===15||((x<3||x>20)&&(y<3||y>12));
+    w.cells.push({x,y,terrain:river||coast?'water':'land',resource:null,stock:0,capacity:0});
+  }
+  const foods=[[3,3],[5,4],[7,3],[8,6],[3,11],[6,12],[15,3],[17,4],[20,3],[15,6],[18,11],[21,12]];
+  const woods=[[2,6],[4,5],[7,10],[9,11],[6,6],[8,13],[14,10],[16,12],[20,6],[21,9]];
+  for(const [x,y] of foods) Object.assign(w.cells[key({x,y},w)],{resource:'food',stock:18,capacity:24});
+  for(const [x,y] of woods) Object.assign(w.cells[key({x,y},w)],{resource:'wood',stock:8,capacity:14});
+  w.agents=names.map((name,id)=>{
+    const home=id%2, s=w.settlements[home];
+    return {id,name,x:s.x+(id%3)-1,y:s.y+(Math.floor(id/3)%3)-1,home,
+      food:7+draw(w.seed,0,id,'provisions')*3,wood:0,health:100,alive:true,
+      action:'Arriving',reason:'Choosing how to make a living on the island.',target:null,
+      contributions:0,received:0,helped:{},memories:[],
+      known:{},seen:{},willingness:0.25+draw(w.seed,0,id,'willingness')*0.55,
+      gatherRate:4.8+draw(w.seed,0,id,'skill')*1.6,missedMeals:0};
+  });
+  w.ledger.initialFood=foodIn(w);w.ledger.initialWood=woodIn(w);
+  record(w,'arrival','Sixteen inhabitants arrive. Food grows on both banks; the west has more timber.',null,null,null,{population:16});
+  for(const a of w.agents)observe(w,a);
+  return w;
+}
+
+function observe(w,a) {
+  const order=++w.statistics.observations;
+  for(const c of w.cells)if(w.options.knowledge==='oracle'||distance(a,c)<=2) {
+    a.seen[key(c,w)]=w.day;
+    if(c.resource)a.known[key(c,w)]={x:c.x,y:c.y,resource:c.resource,stock:c.stock,seenAt:w.day,order,source:a.id,via:null};
+  }
+}
+function believedStock(w,a,c) {
+  if(w.options.knowledge==='oracle')return c.stock;
+  const report=a.known[key(c,w)];if(!report)return 0;
+  const dry=w.drought&&c.x<11?.08:1;
+  const growth=c.resource==='food'?(c.x<11?1.9:2.4)*(1+.35*Math.sin(w.day*Math.PI/40))*dry:(c.x<11?.22:.1);
+  return Math.min(c.capacity,report.stock+Math.max(0,w.day-report.seenAt)*growth);
+}
+function exchangeReports(w,a) {
+  if(w.options.knowledge!=='reports')return;
+  for(const b of w.agents)if(b.alive&&b.id!==a.id&&distance(a,b)<=2) {
+    const candidates=Object.entries(a.known).filter(([k,r])=>!b.known[k]||r.seenAt>b.known[k].seenAt||(r.seenAt===b.known[k].seenAt&&(r.order??0)>(b.known[k].order??0)&&Math.abs(r.stock-b.known[k].stock)>1e-9))
+      .sort(([,r],[,s])=>s.seenAt-r.seenAt||(s.order??0)-(r.order??0)||r.y-s.y||r.x-s.x);
+    const first=candidates[0];if(!first)continue;
+    if(w.blockedReports.some(block=>block.day===w.day&&block.actor===a.id&&block.target===b.id)) {
+      const [,r]=first;record(w,'report-blocked',`You withhold ${a.name}'s report to ${b.name}.`,a.id,b.id,{x:a.x,y:a.y},
+        {site:{x:r.x,y:r.y},reportedStock:r.stock,observedDay:r.seenAt,originalObserver:r.source});continue;
+    }
+    const [k,r]=first;b.known[k]={...r,via:a.id};w.statistics.reports++;
+    record(w,'report',`${a.name} tells ${b.name} about ${r.stock.toFixed(1)} ${r.resource} observed on day ${r.seenAt}.`,a.id,b.id,{x:a.x,y:a.y},
+      {site:{x:r.x,y:r.y},resource:r.resource,reportedStock:r.stock,observedDay:r.seenAt,observedOrder:r.order??0,originalObserver:r.source});
+  }
+}
+
+function passable(w,p) {
+  if(p.x<0||p.y<0||p.x>=w.width||p.y>=w.height)return false;
+  const c=w.cells[key(p,w)];
+  return c.terrain==='land'||(w.bridge.open&&p.y===w.bridge.y&&(p.x===w.bridge.x||p.x===w.bridge.x+1));
+}
+function reachable(w, from) {
+  if(!passable(w,from))return {parents:new Map(),distances:new Map()};
+  const start=key(from,w),parents=new Map([[start,null]]),distances=new Map([[start,0]]),queue=[from];
+  for(let i=0;i<queue.length;i++) {
+    const p=queue[i];
+    for(const [dx,dy] of [[0,-1],[1,0],[0,1],[-1,0]]) {
+      const q={x:p.x+dx,y:p.y+dy},k=key(q,w);
+      if(passable(w,q)&&!parents.has(k)) {parents.set(k,key(p,w));distances.set(k,distances.get(key(p,w))+1);queue.push(q);}
+    }
+  }
+  return {parents,distances};
+}
+function reconstruct(w,from,to,parents) {
+  let k=key(to,w),start=key(from,w);if(!parents.has(k))return null;
+  const points=[];
+  while(k!==start){points.push({x:k%w.width,y:Math.floor(k/w.width)});k=parents.get(k);}
+  return points.reverse();
+}
+function findPath(w,from,to) {return reconstruct(w,from,to,reachable(w,from).parents);}
+function record(w,type,text,actor=null,target=null,location=null,evidence={}) {
+  const e={id:w.events.length+1,day:w.day,type,text,actor,target,location,evidence};w.events.push(e);return e;
+}
+function remember(w,a,e,text=e.text) {
+  if(w.options.memory){a.memories.push({day:w.day,eventId:e.id,text});if(a.memories.length>12)a.memories.shift();}
+}
+function move(w,a,to,path) {
+  const route=path??findPath(w,a,to);a.target={x:to.x,y:to.y};
+  if(!route)return false;
+  const last=route[Math.min(w.options.travelSteps,route.length)-1];
+  w.statistics.travel+=Math.min(w.options.travelSteps,route.length);
+  if(last){a.x=last.x;a.y=last.y;}
+  return a.x===to.x&&a.y===to.y;
+}
+function work(w,a,resource) {
+  const reach=reachable(w,a);let best=null,score=-Infinity;
+  // Keep a viable plan instead of oscillating between patches every day.
+  if(a.target&&a.action===(resource==='food'?'Foraging':'Gathering timber')) {
+    const planned=w.cells[key(a.target,w)];
+    if(planned?.resource===resource&&believedStock(w,a,planned)>=.4&&reach.distances.has(key(planned,w)))best=planned;
+  }
+  if(!best)
+  for(const c of w.cells) if(c.resource===resource&&believedStock(w,a,c)>=0.4&&reach.distances.has(key(c,w))) {
+    const d=reach.distances.get(key(c,w));
+    const value=Math.min(believedStock(w,a,c),resource==='food'?a.gatherRate:3)/(1+d/w.options.travelSteps)
+      +draw(w.seed,w.day,a.id,`site:${c.x}:${c.y}`)*0.18;
+    if(value>score){best=c;score=value;}
+  }
+  if(!best){
+    const frontier=w.cells.filter(c=>c.terrain==='land'&&reach.distances.has(key(c,w)))
+      .sort((b,c)=>(a.seen[key(b,w)]??-1)-(a.seen[key(c,w)]??-1)||reach.distances.get(key(b,w))-reach.distances.get(key(c,w))||b.y-c.y||b.x-c.x)[0];
+    a.action='Exploring';a.reason=`No known reachable ${resource} patch looks productive; checking an unobserved or older area.`;
+    if(frontier)move(w,a,frontier,reconstruct(w,a,frontier,reach.parents));else a.target=null;return;
+  }
+  a.action=resource==='food'?'Foraging':'Gathering timber';
+  a.reason=resource==='food'?`Choosing food by ${w.options.knowledge==='oracle'?'current stocks':'dated observations'}, expected yield and travel cost.`:'Gathering real timber for the broken bridge.';
+  const belief=believedStock(w,a,best);
+  const report=a.known[key(best,w)];
+  if(!a.target||a.target.x!==best.x||a.target.y!==best.y)record(w,'destination',`${a.name} heads toward ${resource} at (${best.x}, ${best.y}).`,a.id,null,{x:a.x,y:a.y},
+    {site:{x:best.x,y:best.y},resource,believedStock:belief,steps:reach.distances.get(key(best,w)),knowledge:w.options.knowledge,
+      observation:report?{day:report.seenAt,order:report.order??0,source:report.source,via:report.via}:null});
+  if(move(w,a,best,reconstruct(w,a,best,reach.parents))) {
+    const amount=Math.min(best.stock,resource==='food'?Math.min(a.gatherRate,14-a.food):3);
+    const actual=best.stock;best.stock-=amount;a[resource]+=amount;a.target=null;w.statistics.harvests++;
+    if(resource==='food')w.statistics.foodGathered+=amount;
+    if(amount<.4){w.statistics.emptyArrivals++;record(w,'empty-arrival',`${a.name} finds too little ${resource} at a patch that looked productive.`,a.id,null,{x:a.x,y:a.y},{resource,amount,believedStock:belief,actualStock:actual});}
+    else record(w,'gather',`${a.name} gathers ${amount.toFixed(1)} ${resource}.`,a.id,null,{x:a.x,y:a.y},{resource,amount,believedStock:belief,actualStock:actual,knowledge:w.options.knowledge,
+      observation:report?{day:report.seenAt,order:report.order??0,source:report.source,via:report.via}:null});
+    a.known[key(best,w)]={x:best.x,y:best.y,resource:best.resource,stock:best.stock,seenAt:w.day,order:++w.statistics.observations,source:a.id,via:null};
+  }
+}
+function socialAction(w,a) {
+  if(!w.options.sharing)return false;
+  const s=w.settlements[a.home];
+  const pantryPath=a.food<2.3&&s.food>.5?findPath(w,a,s):null;
+  const nearerMeal=pantryPath&&w.cells.some(c=>c.resource==='food'&&believedStock(w,a,c)>=.9&&(findPath(w,a,c)?.length??Infinity)<pantryPath.length);
+  if(pantryPath&&!nearerMeal) {
+    a.action='Seeking pantry food';a.reason='Own food is low; the shared store still holds food.';
+    if(move(w,a,s,pantryPath)) {
+      const amount=Math.min(4,s.food);s.food-=amount;a.food+=amount;a.received+=amount;
+      const e=record(w,'withdraw',`${a.name} takes ${amount.toFixed(1)} meals from ${s.name}'s pantry.`,a.id,null,{x:a.x,y:a.y},{amount,pantryAfter:s.food});remember(w,a,e);
+    }
+    return true;
+  }
+  if(a.food>4.8) {
+    const nearby=w.agents.filter(b=>b.alive&&b.id!==a.id&&b.food<2.2&&distance(a,b)<=2)
+      .sort((b,c)=>(a.helped[c.id]??0)-(a.helped[b.id]??0)||b.food-c.food||b.id-c.id);
+    const b=nearby[0];
+    if(b) {
+      const remembered=w.options.memory?(a.helped[b.id]??0):0;
+      if(draw(w.seed,w.day,a.id,'help')<a.willingness+Math.min(.6,remembered*.18)) {
+        if((w.omittedGifts??[]).some(entry=>entry.day===w.day&&entry.actor===a.id&&entry.target===b.id)) {
+          a.action='Gift omitted';a.reason='This controlled reconstruction retains supplies and spends the chosen sharing workday.';a.target=null;
+          record(w,'gift-omitted',`You omit ${a.name}'s gift to ${b.name}, retaining food and spending the workday.`,a.id,b.id,{x:a.x,y:a.y},
+            {plannedAmount:Math.min(2.8,a.food-3),donorFoodBefore:a.food,recipientFoodBefore:b.food});
+          return true;
+        }
+        const amount=Math.min(2.8,a.food-3);a.food-=amount;b.food+=amount;b.received+=amount;
+        if(w.options.memory)b.helped[a.id]=(b.helped[a.id]??0)+1;
+        a.action='Sharing food';a.reason=remembered?'Returning help remembered from this inhabitant.':'A nearby inhabitant is short of food and I have a margin.';a.target=null;
+        const e=record(w,'gift',`${a.name} gives ${b.name} ${amount.toFixed(1)} meals${remembered?' after remembering earlier help':''}.`,a.id,b.id,{x:a.x,y:a.y},{amount,rememberedHelp:remembered});remember(w,a,e);remember(w,b,e);return true;
+      }
+    }
+  }
+  if(a.food>9&&s.food<18&&draw(w.seed,w.day,a.id,'deposit')<a.willingness) {
+    a.action='Stocking pantry';a.reason='Keeping a personal buffer and contributing the surplus.';
+    if(move(w,a,s)){const amount=Math.min(4,a.food-6,18-s.food);a.food-=amount;s.food+=amount;a.contributions+=amount;
+      const e=record(w,'deposit',`${a.name} puts ${amount.toFixed(1)} meals in ${s.name}'s pantry.`,a.id,null,{x:a.x,y:a.y},{amount,pantryAfter:s.food});remember(w,a,e);}
+    return true;
+  }
+  return false;
+}
+function choose(w,a) {
+  if(a.food<2.3&&socialAction(w,a))return;
+  if(a.food<4){work(w,a,'food');return;}
+  if(socialAction(w,a))return;
+  if(!w.bridge.open&&a.food>4&&draw(w.seed,w.day,a.id,'repair')<0.18+a.willingness*.5) {
+    if(a.wood<1){work(w,a,'wood');return;}
+    const shore={x:a.x<w.bridge.x?w.bridge.x-1:w.bridge.x+2,y:w.bridge.y};
+    a.action='Repairing bridge';a.reason='Spending timber and a workday to reconnect the banks.';
+    if(move(w,a,shore)) {
+      if((w.omittedRepairs??[]).some(entry=>entry.day===w.day&&entry.actor===a.id)) {
+        a.action='Repair omitted';a.reason='This controlled reconstruction retains the timber and omits this repair.';
+        record(w,'repair-omitted',`You omit ${a.name}'s repair contribution, retaining the timber.`,a.id,null,shore,{availableWood:a.wood,repairBefore:w.bridge.repair});
+        return;
+      }
+      const amount=Math.min(3,a.wood,w.bridge.required-w.bridge.repair);a.wood-=amount;w.bridge.repair+=amount;w.ledger.woodUsed+=amount;
+      const e=record(w,'repair',`${a.name} adds ${amount.toFixed(1)} timber to the bridge (${w.bridge.repair.toFixed(0)}/${w.bridge.required}).`,a.id,null,shore,{amount,repairAfter:w.bridge.repair});remember(w,a,e);
+      if(w.bridge.repair>=w.bridge.required-1e-9){w.bridge.open=true;record(w,'bridge-open','The banks reconnect after inhabitants contribute eighteen timber.',null,null,shore,{repair:w.bridge.repair});}
+    }
+    return;
+  }
+  if(a.food>10) {
+    a.action='Resting';a.reason='Food is sufficient; returning home instead of hoarding.';
+    move(w,a,w.settlements[a.home]);return;
+  }
+  work(w,a,'food');
+}
+function stepWorld(w,onAction) {
+  if(onAction!==undefined&&typeof onAction!=='function')throw new Error('Action observer must be a function.');
+  w.day++;
+  const growthSeason=1+0.35*Math.sin(w.day*Math.PI/40);
+  if(w.drought&&w.day>w.drought.until){w.drought=null;record(w,'weather','The west-bank drought ends.');}
+  for(const c of w.cells) {
+    if(c.resource==='food') {
+      const dry=w.drought&&c.x<11?0.08:1;
+      const amount=Math.min(c.capacity-c.stock,(c.x<11?1.9:2.4)*growthSeason*dry);
+      c.stock+=amount;w.ledger.produced+=amount;
+    } else if(c.resource==='wood'){const amount=Math.min(c.capacity-c.stock,c.x<11?.22:.1);c.stock+=amount;w.ledger.woodProduced+=amount;}
+  }
+  const order=w.agents.filter(a=>a.alive).sort((a,b)=>draw(w.seed,w.day,a.id,'order')-draw(w.seed,w.day,b.id,'order')||a.id-b.id);
+  // Local decisions use morning observations; later competition can empty a patch.
+  for(const a of order)observe(w,a);
+  for(const a of order) {
+    // Looking again before acting is available equally with or without reports.
+    observe(w,a);
+    if(onAction)onAction({day:w.day,actor:a.id,phase:'before-action',
+      agents:w.agents.map(({id,name,x,y,food,wood,alive})=>({id,name,x,y,food,wood,alive})),
+      cells:w.cells.filter(c=>c.resource).map(({x,y,resource,stock})=>({x,y,resource,stock}))});
+    choose(w,a);
+    exchangeReports(w,a);
+    const meal=Math.min(.9,a.food);a.food-=meal;w.ledger.consumed+=meal;
+    if(meal<.9-1e-9){a.health=Math.max(0,a.health-9*(.9-meal)/.9);a.missedMeals++;
+      if(a.missedMeals===1||a.missedMeals%5===0){const e=record(w,'hunger',`${a.name} misses a full meal (${a.health.toFixed(0)} health).`,a.id,null,{x:a.x,y:a.y},{meal,health:a.health,missedMeals:a.missedMeals});remember(w,a,e);}
+    } else {a.health=Math.min(100,a.health+2.5);a.missedMeals=0;}
+    if(a.health<=0){a.alive=false;a.action='Died';a.reason='Health reached zero after missed meals.';
+      w.ledger.lost+=a.food;w.ledger.woodUsed+=a.wood;a.food=0;a.wood=0;a.target=null;
+      record(w,'death',`${a.name} dies after food shortages.`,a.id,null,{x:a.x,y:a.y},{health:0});}
+  }
+  return w;
+}
+function advance(w,days,onAction) {
+  if(!Number.isInteger(days)||days<0||days>1000)throw new Error('Advance must be 0–1000 days.');
+  if(onAction!==undefined&&typeof onAction!=='function')throw new Error('Action observer must be a function.');
+  for(let i=0;i<days;i++)stepWorld(w,onAction);return w;
+}
+function cloneWorld(w) {return JSON.parse(JSON.stringify(w));}
+function applyIntervention(w,type,details={}) {
+  if(!['drought','bridge','forget','rain','local','reports','oracle','block-report','skip-repair','skip-gift','forget-helper'].includes(type))throw new Error('Unknown intervention.');
+  if(type==='skip-gift') {
+    if(!details||!Number.isSafeInteger(details.day)||details.day<=w.day||details.day>1000||!Number.isInteger(details.actor)||!Number.isInteger(details.target)||details.actor===details.target
+      ||!w.agents.some(a=>a.id===details.actor)||!w.agents.some(a=>a.id===details.target))throw new Error('Invalid future gift.');
+    if((w.omittedGifts??[]).some(e=>e.day===details.day&&e.actor===details.actor&&e.target===details.target))throw new Error('Gift omission already scheduled.');
+    const entry={day:details.day,actor:details.actor,target:details.target};
+    (w.omittedGifts??=[]).push(entry);
+    record(w,'intervention',`You arrange to omit one chosen gift on day ${entry.day}, retaining its food and spending its workday.`,null,null,null,{intervention:type,...entry});
+  }
+  if(type==='skip-repair') {
+    if(!details||!Number.isSafeInteger(details.day)||details.day<=w.day||details.day>1000||!Number.isInteger(details.actor)||!w.agents.some(a=>a.id===details.actor))throw new Error('Invalid future repair.');
+    if((w.omittedRepairs??[]).some(e=>e.day===details.day&&e.actor===details.actor))throw new Error('Repair omission already scheduled.');
+    const entry={day:details.day,actor:details.actor};
+    (w.omittedRepairs??=[]).push(entry);
+    record(w,'intervention',`You arrange to omit one repair on day ${entry.day}.`,null,null,null,{intervention:type,...entry});
+  }
+  if(type==='forget-helper') {
+    const actor=w.agents.find(a=>a.id===details?.actor),helper=w.agents.find(a=>a.id===details?.helper);
+    if(!actor||!helper||actor.id===helper.id||!Number.isInteger(details.actor)||!Number.isInteger(details.helper))throw new Error('Invalid helper-memory reconstruction.');
+    const removed=actor.helped[helper.id]??0;delete actor.helped[helper.id];
+    actor.memories=actor.memories.filter(m=>{const e=w.events[m.eventId-1];return !(e?.type==='gift'&&e.actor===helper.id&&e.target===actor.id);});
+    record(w,'intervention',`You remove ${actor.name}'s remembered help from ${helper.name}, retaining supplies and history.`,actor.id,helper.id,{x:actor.x,y:actor.y},
+      {intervention:type,actor:actor.id,helper:helper.id,removedInstances:removed});
+  }
+  if(type==='block-report') {
+    if(!details||!Number.isSafeInteger(details.day)||details.day<=w.day||details.day>1000||!Number.isInteger(details.actor)||!Number.isInteger(details.target)||details.actor===details.target
+      ||!w.agents.some(a=>a.id===details.actor)||!w.agents.some(a=>a.id===details.target))throw new Error('Invalid future conversation.');
+    const block={day:details.day,actor:details.actor,target:details.target};
+    if(w.blockedReports.some(b=>b.day===block.day&&b.actor===block.actor&&b.target===block.target))throw new Error('Conversation already scheduled.');
+    w.blockedReports.push(block);record(w,'intervention',`You arrange to withhold one report on day ${block.day}.`,null,null,null,{intervention:type,...block});
+  }
+  if(['local','reports','oracle'].includes(type)) {
+    if(w.options.knowledge==='oracle')for(const a of w.agents)observe(w,a);
+    w.options.knowledge=type;record(w,'intervention',`You change patch knowledge to ${type==='oracle'?'current global stocks':type==='local'?'local observations':'local observations with nearby reports'}.`,null,null,null,{intervention:type});
+  }
+  if(type==='drought'){w.drought={side:0,until:w.day+45};record(w,'intervention','You start a 45-day west-bank drought.',null,null,null,{intervention:type,until:w.drought.until});}
+  if(type==='bridge') {
+    w.bridge.open=false;w.bridge.repair=0;
+    for(const a of w.agents)if(a.alive&&a.y===w.bridge.y&&(a.x===w.bridge.x||a.x===w.bridge.x+1)) {
+      const previous={x:a.x,y:a.y};a.x=a.x===w.bridge.x?w.bridge.x-1:w.bridge.x+2;
+      record(w,'evacuate',`${a.name} steps off the collapsing bridge.`,a.id,null,{x:a.x,y:a.y},{from:previous,to:{x:a.x,y:a.y}});
+    }
+    record(w,'intervention','You break the bridge. Only real timber and work can reconnect the banks.',null,null,{x:w.bridge.x,y:w.bridge.y},{intervention:type});
+  }
+  if(type==='forget'){w.options.memory=false;for(const a of w.agents){a.helped={};a.memories=[];}record(w,'intervention','You erase remembered help; inhabitants retain their possessions.',null,null,null,{intervention:type});}
+  if(type==='rain'){w.drought=null;record(w,'intervention','You end the drought.',null,null,null,{intervention:type});}
+  return w;
+}
+function summarize(w) {
+  const living=w.agents.filter(a=>a.alive),food=foodIn(w),wood=woodIn(w);
+  return {day:w.day,alive:living.length,population:w.agents.length,food,pantry:w.settlements.reduce((n,s)=>n+s.food,0),
+    meanHealth:living.length?living.reduce((n,a)=>n+a.health,0)/living.length:0,
+    gifts:w.events.filter(e=>e.type==='gift').length,contributions:w.agents.reduce((n,a)=>n+a.contributions,0),
+    withdrawals:w.events.filter(e=>e.type==='withdraw').length,bridgeOpen:w.bridge.open,bridgeRepair:w.bridge.repair,
+    foodBalanceError:food+w.ledger.consumed+w.ledger.lost-w.ledger.initialFood-w.ledger.produced,
+    woodBalanceError:wood+w.ledger.woodUsed-w.ledger.initialWood-w.ledger.woodProduced,
+    travelSteps:w.statistics.travel,totalFoodGathered:w.statistics.foodGathered,emptyArrivals:w.statistics.emptyArrivals,reports:w.statistics.reports};
+}
+
+
+
+const MAX_SAVE_BYTES = 64 * 1024 * 1024;
+
+const finite = n => typeof n === 'number' && Number.isFinite(n);
+const bounded = (n, low, high = Number.MAX_SAFE_INTEGER) => finite(n) && n >= low && n <= high;
+const integer = (n, low = 0, high = Number.MAX_SAFE_INTEGER) => Number.isSafeInteger(n) && n >= low && n <= high;
+const object = v => v !== null && typeof v === 'object' && !Array.isArray(v);
+const text = v => typeof v === 'string' && v.length <= 10000;
+const point = p => object(p) && integer(p.x, 0, 23) && integer(p.y, 0, 15);
+const require = (condition, message) => { if (!condition) throw new Error(message); };
+
+// Evidence is retained as JSON, with finite numbers and modest nesting limits.
+function validEvidence(value, depth = 0, budget = { remaining: 1000 }) {
+  if (--budget.remaining < 0 || depth > 8) return false;
+  if (value === null || typeof value === 'boolean') return true;
+  if (typeof value === 'number') return finite(value);
+  if (typeof value === 'string') return text(value);
+  if (Array.isArray(value)) return value.every(v => validEvidence(v, depth + 1, budget));
+  return object(value) && Object.entries(value).every(([key, v]) =>
+    !['__proto__', 'constructor', 'prototype'].includes(key) && validEvidence(v, depth + 1, budget));
+}
+
+function validateWorld(w) {
+  require(object(w) && w.version === 1 && w.width === 24 && w.height === 16 &&
+    Number.isSafeInteger(w.seed) && integer(w.day, 0, Number.MAX_SAFE_INTEGER - 45), 'Unsupported world format.');
+  require(object(w.options) && typeof w.options.memory === 'boolean' &&
+    typeof w.options.sharing === 'boolean' && integer(w.options.travelSteps, 1, 8) &&
+    ['oracle', 'local', 'reports'].includes(w.options.knowledge), 'Invalid world settings.');
+  require(object(w.statistics) && integer(w.statistics.observations), 'Invalid observation counter.');
+  const initial = createWorld(w.seed, w.options);
+  require(Array.isArray(w.cells) && w.cells.length === 384, 'Invalid map size.');
+  w.cells.forEach((c, index) => {
+    const original = initial.cells[index];
+    require(point(c) && c.x === original.x && c.y === original.y && c.terrain === original.terrain &&
+      c.resource === original.resource && c.capacity === original.capacity && bounded(c.stock, 0, c.capacity),
+    'Invalid map order, resource, or stock.');
+  });
+  require(Array.isArray(w.settlements) && w.settlements.length === 2, 'Invalid settlements.');
+  w.settlements.forEach((s, index) => {
+    const original = initial.settlements[index];
+    require(point(s) && s.id === index && s.x === original.x && s.y === original.y && text(s.name) &&
+      bounded(s.food, 0), 'Invalid settlement order or food.');
+  });
+  require(object(w.bridge) && w.bridge.x === 11 && w.bridge.y === 8 && w.bridge.required === 18 &&
+    typeof w.bridge.open === 'boolean' && bounded(w.bridge.repair, 0, 18) &&
+    (w.bridge.open || w.bridge.repair < 18), 'Invalid bridge state.');
+  require(w.drought === null || (object(w.drought) && w.drought.side === 0 &&
+    integer(w.drought.until, w.day, Number.MAX_SAFE_INTEGER)), 'Invalid drought state.');
+  require(Array.isArray(w.agents) && w.agents.length === initial.agents.length, 'Invalid resident population.');
+  const ids = new Set(w.agents.map(a => a?.id));
+  require(ids.size === w.agents.length && [...ids].every(id => integer(id, 0, 15)), 'Invalid resident IDs.');
+  const actor = id => id === null || ids.has(id);
+  require(Array.isArray(w.events) && w.events.length > 0 && w.events.length <= 100000, 'Invalid event log.');
+  let previousDay = 0;
+  w.events.forEach((e, index) => {
+    require(object(e) && e.id === index + 1 && integer(e.day, previousDay, w.day) && text(e.type) &&
+      text(e.text) && actor(e.actor) && actor(e.target) && (e.location === null || point(e.location)) &&
+      object(e.evidence) && validEvidence(e.evidence), 'Invalid event provenance or evidence.');
+    previousDay = e.day;
+  });
+  require(Array.isArray(w.blockedReports) && w.blockedReports.length <= w.events.length,
+    'Missing or invalid withheld-report schedule.');
+  const conversationKey = b => `${b.day}:${b.actor}:${b.target}`;
+  const scheduled = new Map();
+  for (const block of w.blockedReports) {
+    require(object(block) && integer(block.day, 1, 1000) && ids.has(block.actor) && ids.has(block.target) &&
+      block.actor !== block.target && !scheduled.has(conversationKey(block)), 'Invalid or duplicate conversation schedule.');
+    scheduled.set(conversationKey(block), { block, announced: 0, withheld: 0 });
+  }
+  for (const event of w.events) {
+    if (event.type === 'intervention' && event.evidence.intervention === 'block-report') {
+      const schedule = scheduled.get(conversationKey(event.evidence));
+      require(schedule && event.evidence.day === schedule.block.day && event.evidence.actor === schedule.block.actor &&
+        event.evidence.target === schedule.block.target && event.day < schedule.block.day && ++schedule.announced === 1,
+        'Conversation schedule does not match its recorded intervention.');
+    }
+    if (event.type === 'report-blocked') {
+      const schedule = scheduled.get(conversationKey(event));
+      require(schedule && ++schedule.withheld === 1,
+        'Withheld report does not match its scheduled day and participants.');
+    }
+  }
+  require([...scheduled.values()].every(record => record.announced === 1),
+    'Every conversation schedule must cite one recorded intervention.');
+  const omissions=w.omittedRepairs===undefined?[]:w.omittedRepairs;
+  require(Array.isArray(omissions)&&omissions.length<=w.events.length,'Invalid omitted-repair schedule.');
+  const repairKey=e=>`${e.day}:${e.actor}`,repairSchedules=new Map();
+  for(const entry of omissions){
+    require(object(entry)&&integer(entry.day,1,1000)&&ids.has(entry.actor)&&!repairSchedules.has(repairKey(entry)),'Invalid or duplicate repair omission.');
+    repairSchedules.set(repairKey(entry),{entry,announced:0,omitted:0});
+  }
+  for(const event of w.events){
+    if(event.type==='intervention'&&event.evidence.intervention==='skip-repair'){
+      const schedule=repairSchedules.get(repairKey(event.evidence));
+      require(schedule&&event.day<schedule.entry.day&&++schedule.announced===1,'Repair omission lacks its matching recorded schedule.');
+    }
+    if(event.type==='repair-omitted'){
+      const schedule=repairSchedules.get(repairKey(event));
+      require(schedule&&++schedule.omitted===1,'Omitted repair does not match a scheduled work shift.');
+    }
+    if(event.type==='intervention'&&event.evidence.intervention==='forget-helper'){
+      require(ids.has(event.evidence.actor)&&ids.has(event.evidence.helper)&&event.evidence.actor!==event.evidence.helper&&
+        event.actor===event.evidence.actor&&event.target===event.evidence.helper&&integer(event.evidence.removedInstances,0,event.day),
+        'Invalid helper-memory reconstruction.');
+    }
+  }
+  require([...repairSchedules.values()].every(s=>s.announced===1),'Every repair omission must have one scheduling record.');
+  const giftOmissions=w.omittedGifts===undefined?[]:w.omittedGifts,giftSchedules=new Map();
+  require(Array.isArray(giftOmissions)&&giftOmissions.length<=w.events.length,'Invalid omitted-gift schedule.');
+  for(const entry of giftOmissions){
+    require(object(entry)&&integer(entry.day,1,1000)&&ids.has(entry.actor)&&ids.has(entry.target)&&entry.actor!==entry.target&&
+      !giftSchedules.has(conversationKey(entry)),'Invalid or duplicate gift omission.');
+    giftSchedules.set(conversationKey(entry),{entry,announced:0,omitted:0});
+  }
+  for(const event of w.events){
+    if(event.type==='intervention'&&event.evidence.intervention==='skip-gift'){
+      const schedule=giftSchedules.get(conversationKey(event.evidence));
+      require(schedule&&event.evidence.day===schedule.entry.day&&event.evidence.actor===schedule.entry.actor&&event.evidence.target===schedule.entry.target&&
+        event.day<schedule.entry.day&&++schedule.announced===1,'Gift omission lacks its matching recorded schedule.');
+    }
+    if(event.type==='gift-omitted'){
+      const schedule=giftSchedules.get(conversationKey(event));
+      require(schedule&&++schedule.omitted===1&&bounded(event.evidence.plannedAmount,0,2.8)&&bounded(event.evidence.donorFoodBefore,4.8,14)&&
+        bounded(event.evidence.recipientFoodBefore,0,2.2),'Omitted gift does not match its scheduled handover.');
+    }
+  }
+  require([...giftSchedules.values()].every(s=>s.announced===1),'Every gift omission must have one scheduling record.');
+  for (const a of w.agents) {
+    require(point(a) && text(a.name) && text(a.action) && text(a.reason) && typeof a.alive === 'boolean' &&
+      integer(a.home, 0, 1) && bounded(a.food, 0) && bounded(a.wood, 0) && bounded(a.health, 0, 100) &&
+      bounded(a.contributions, 0) && bounded(a.received, 0) && bounded(a.willingness, .25, .8) &&
+      bounded(a.gatherRate, 4.8, 6.4) && integer(a.missedMeals, 0, w.day) &&
+      (a.target === null || point(a.target)), 'Invalid resident decision fields or stores.');
+    require(a.alive === (a.health > 0) && (a.alive || (a.food === 0 && a.wood === 0 && a.target === null)),
+      'Invalid resident health state.');
+    const standingCell = w.cells[a.y * w.width + a.x];
+    require(!a.alive || standingCell.terrain === 'land' || (w.bridge.open && a.y === 8 && [11, 12].includes(a.x)),
+      'Living resident occupies impassable water.');
+    require(a.target === null || w.cells[a.target.y * w.width + a.target.x].terrain === 'land',
+      'Resident target is not land.');
+    require(object(a.known) && object(a.seen), 'Missing resident patch observations.');
+    const cellIndex = index => String(Number(index)) === index && integer(Number(index), 0, 383);
+    for (const [index, observation] of Object.entries(a.known)) {
+      require(cellIndex(index) && point(observation), 'Invalid observation cell key or coordinates.');
+      const cell = w.cells[Number(index)];
+      require(cell.resource !== null && observation.x === cell.x && observation.y === cell.y &&
+        observation.resource === cell.resource && bounded(observation.stock, 0, cell.capacity) &&
+        integer(observation.seenAt, 0, w.day) && integer(observation.order, 1, w.statistics.observations) &&
+        ids.has(observation.source) &&
+        (observation.via === null || (ids.has(observation.via) && observation.via !== a.id)),
+        'Invalid observed patch, stock, date, or source.');
+      require(observation.via !== null || observation.source === a.id,
+        'A personal observation must identify its observer.');
+    }
+    for (const [index, day] of Object.entries(a.seen))
+      require(cellIndex(index) && integer(day, 0, w.day), 'Invalid seen cell or observation day.');
+    require(object(a.helped) && Object.entries(a.helped).every(([id, count]) =>
+      String(Number(id)) === id && ids.has(Number(id)) && Number(id) !== a.id && integer(count, 1, w.day)),
+    'Invalid remembered help counts.');
+    require(Array.isArray(a.memories) && a.memories.length <= 12, 'Invalid resident memories.');
+    let previousMemoryDay = 0;
+    for (const m of a.memories) {
+      require(object(m) && integer(m.day, previousMemoryDay, w.day) && integer(m.eventId, 1, w.events.length) &&
+        text(m.text), 'Invalid resident memory.');
+      const e = w.events[m.eventId - 1];
+      require(e.day === m.day && e.text === m.text && (e.actor === a.id || e.target === a.id), 'Memory references an unrelated event.');
+      previousMemoryDay = m.day;
+    }
+    require(w.options.memory || (a.memories.length === 0 && Object.keys(a.helped).length === 0),
+      'Disabled memory must be empty.');
+  }
+  require(object(w.ledger), 'Missing resource ledger.');
+  for (const field of ['initialFood', 'produced', 'consumed', 'lost', 'initialWood', 'woodProduced', 'woodUsed'])
+    require(bounded(w.ledger[field], 0), 'Invalid resource ledger.');
+  require(object(w.statistics), 'Missing world statistics.');
+  require(integer(w.statistics.travel, 0, Math.min(Number.MAX_SAFE_INTEGER, w.day * 16 * 8)) &&
+    bounded(w.statistics.foodGathered, 0) && integer(w.statistics.emptyArrivals) &&
+    integer(w.statistics.reports) && integer(w.statistics.harvests), 'Invalid world statistics.');
+  const harvests = w.events.filter(e => e.type === 'gather' || e.type === 'empty-arrival');
+  const gatheredFood = harvests.filter(e => e.evidence.resource === 'food')
+    .reduce((sum, e) => sum + e.evidence.amount, 0);
+  require(w.statistics.reports === w.events.filter(e => e.type === 'report').length &&
+    w.statistics.emptyArrivals === w.events.filter(e => e.type === 'empty-arrival').length &&
+    w.statistics.harvests === harvests.length && finite(gatheredFood) &&
+    Math.abs(w.statistics.foodGathered - gatheredFood) <= 1e-5,
+    'World statistics do not match recorded events.');
+  const s = summarize(w);
+  require(finite(s.foodBalanceError) && finite(s.woodBalanceError) &&
+    Math.abs(s.foodBalanceError) <= 1e-5 && Math.abs(s.woodBalanceError) <= 1e-5, 'Resource ledger does not balance.');
+  return w;
+}
+
+function validateComparison(data) {
+  require(object(data) && data.format === 'common-ground-comparison' && data.version === 1,
+    'Choose a Common Ground comparison file.');
+  validateWorld(data.baseline);
+  validateWorld(data.experiment);
+  require(data.baseline.seed === data.experiment.seed && data.baseline.day === data.experiment.day,
+    'The two worlds must share a seed and day.');
+  return data;
+}
+
+// Use the same UTF-8 limit for downloads and imports; compact JSON keeps long runs small.
+function serializeComparison(data) {
+  validateComparison(data);
+  const serialized = JSON.stringify(data);
+  if (serialized.length > MAX_SAVE_BYTES || new TextEncoder().encode(serialized).byteLength > MAX_SAVE_BYTES)
+    throw new Error('This comparison exceeds the 64 MiB save limit.');
+  return serialized;
+}
+
+
+
+
+const hNumber=n=>Number(n).toFixed(2);
+const hRow=(label,value)=>({label,value:String(value)});
+const hAgent=(w,id)=>w.agents.find(a=>a.id===id);
+const hPoint=a=>`(${a.x}, ${a.y})`;
+const hGift=(w,day,actor,target)=>w.events.find(e=>e.day===day&&e.type==='gift'&&e.actor===actor&&e.target===target);
+function hBalance(w){validateWorld(w);const s=summarize(w);if(Math.abs(s.foodBalanceError)>1e-7||Math.abs(s.woodBalanceError)>1e-7)throw Error('Harder case resources do not balance.');}
+function hFrame(w){const a=hAgent(w,12);return {day:w.day,x:a.x,y:a.y,food:a.food,wood:a.wood,bridgeOpen:w.bridge.open,bridgeRepair:w.bridge.repair};}
+function hRun(start){
+ const w=cloneWorld(start),frames=[hFrame(w)],choices=[];
+ for(let day=0;day<2;day++){
+  advance(w,1,view=>{if([8,12].includes(view.actor))choices.push(view);});frames.push(hFrame(w));
+ }
+ hBalance(w);return {w,frames,choices};
+}
+function hOrdered(run,title){
+ const steps=run.choices.filter(f=>f.day===55||f.actor===12).map(f=>{
+  const ivo=f.agents.find(a=>a.id===8),moss=f.agents.find(a=>a.id===12),patch=f.cells.find(c=>c.x===15&&c.y===6);
+  return {heading:`Day ${f.day} · before ${f.actor===8?'Ivo':'Moss'} chooses`,rows:[
+   hRow('Ivo',`${hNumber(ivo.food)} food · ${hPoint(ivo)}`),hRow('Moss',`${hNumber(moss.food)} food · ${hPoint(moss)}`),hRow('Grove (15, 6)',hNumber(patch.stock)+' food')
+  ]};
+ });
+ const receipts=run.w.events.filter(e=>e.day>=55&&['gift','gather','gift-omitted'].includes(e.type)&&[0,8,12].includes(e.actor)).map(e=>{
+  const name=hAgent(run.w,e.actor).name;
+  return e.type==='gift'?`Day ${e.day}: ${name} → ${hAgent(run.w,e.target).name}, ${hNumber(e.evidence.amount)} food.`:
+   e.type==='gift-omitted'?`Day ${e.day}: ${name}'s chosen handover is omitted; the sharing workday is spent.`:
+    `Day ${e.day}: ${name} gathers ${hNumber(e.evidence.amount)} food at ${hPoint(e.location)}.`;
+ });
+ return {title,steps,receipts};
+}
+
+function createHarderCase(){
+ const start=createWorld(42);advance(start,25);applyIntervention(start,'drought');applyIntervention(start,'bridge');advance(start,29);
+ const recorded=hRun(start),branches=new Map(),first=hGift(recorded.w,55,8,0),later=hGift(recorded.w,56,12,8);
+ if(!first||!later)throw Error('The untaken-harvest history no longer reproduces.');
+ const specs=[
+  {id:'omit-gift-workday',label:'Omit Ivo’s day-55 gift; spend the sharing workday',prompt:'Omit only the chosen Ivo → Ada transfer on day 55. Ivo keeps the food and spends that sharing workday, with no replacement gathering. His later ordinary decisions remain free.',type:'skip-gift',details:{day:55,actor:8,target:0}},
+  {id:'forget-ivo-ada',label:'Remove Ivo’s association; allow his ordinary next activity',prompt:'Remove only Ivo’s remembered association with Ada’s help at the day-54 checkpoint. He keeps his supplies and chooses his subsequent activities by the ordinary rules.',type:'forget-helper',details:{actor:8,helper:0}},
+  {id:'forget-ada-ivo',label:'Remove Ada’s reverse association; retain Ivo’s',prompt:'Remove only Ada’s remembered association with Ivo’s help. Retain his association with her and all starting supplies.',type:'forget-helper',details:{actor:0,helper:8}},
+  {id:'retain-history',label:'Retain the starting history',prompt:'Retain all help associations, inventories and decision rules. Replay the recorded starting checkpoint.'}
+ ];
+ const options=specs.map(spec=>{
+  const altered=cloneWorld(start);if(spec.type)applyIntervention(altered,spec.type,spec.details);
+  const pair={format:'common-ground-comparison',version:1,scenario:'none',baseline:cloneWorld(start),experiment:altered};validateComparison(pair);branches.set(spec.id,pair);
+  const replay=hRun(altered),transfer=hGift(replay.w,56,12,8),early=hGift(replay.w,55,8,0),harvest=replay.w.events.find(e=>e.day===55&&e.type==='gather'&&e.actor===12);
+  const choice=replay.choices.find(f=>f.day===56&&f.actor===12),ivo=choice.agents.find(a=>a.id===8),moss=choice.agents.find(a=>a.id===12);
+  return {id:spec.id,label:spec.label,prompt:spec.prompt+' Replay through day 56.',unchanged:['All starting supplies and positions','Other starting help associations','Growth, movement, eating and sharing rules','Weather and keyed chance draws'],correctPrediction:transfer?'remains':'absent',result:{
+   heading:'Replay: two workdays and a later handover',body:`Moss ${transfer?'gives Ivo '+hNumber(transfer.evidence.amount)+' food':'makes no gift to Ivo'} on day 56. The open workday ledgers below show who acted first, what was harvested and the stocks before Moss chose.`,
+   facts:[hRow('Ivo → Ada, day 55',early?hNumber(early.evidence.amount)+' food':'None'),hRow('Moss harvest, day 55',hNumber(harvest.evidence.amount)+' food'),hRow('Moss before his day-56 choice',hNumber(moss.food)+' food'),hRow('Ivo before Moss’s day-56 choice',hNumber(ivo.food)+' food'),hRow('Moss → Ivo, day 56',transfer?hNumber(transfer.evidence.amount)+' food':'None')],
+   visual:{subject:'Moss',recorded:recorded.frames,replay:replay.frames},ordered:[hOrdered(recorded,'Recorded workdays'),hOrdered(replay,'Chosen replay workdays')]
+  }};
+ });
+ const patch=recorded.choices.find(f=>f.day===55&&f.actor===8).cells.find(c=>c.x===15&&c.y===6);
+ return {
+  id:'harvest',title:'The Untaken Harvest',subtitle:'A handover crosses two workdays.',
+  brief:'Two receipts from the same grove: Ivo gives Ada food on day 55, then Moss gives Ivo food on day 56. Investigate whether interrupting the first handover also prevents the second.',
+  question:'Would both proposed interruptions prevent Moss’s day-56 handover?',
+  rules:['Each resident performs one physical work activity, then consumes up to 0.9 food. Earlier residents have already acted and eaten when a later resident chooses.','Giving requires more than 4.8 food, a recipient with less than 2.2, and at most two adjacent steps between them. These conditions permit a gift; they do not force every eligible resident to give.','Grove food is shared physical stock. A harvest removes what it takes, up to that resident’s gathering capacity.','Replays preserve starting stocks, positions, weather and chance draws. Inspect both proposed interruptions before concluding about their relationship.'],
+  clues:[
+   {id:'stores',title:'The starting stores',day:54,body:'Ada and Ivo are at (15, 6); Moss is at (14, 6). These are the end-of-day stocks before either interruption.',rows:[0,8,12].map(id=>hRow(hAgent(start,id).name,hNumber(hAgent(start,id).food)+' food')),location:{x:15,y:6}},
+   {id:'first-receipt',title:'The earlier handover',day:55,body:`Ivo transfers ${hNumber(first.evidence.amount)} food to Ada at (15, 6). A day-54 receipt also records Ada handing Ivo ${hNumber(hGift(start,54,0,8).evidence.amount)} food.`,rows:[hRow('Day 55 sender','Ivo'),hRow('Day 55 recipient','Ada')],location:{x:15,y:6}},
+   {id:'grove',title:'The shared grove',day:55,body:'This count is taken before Ivo’s day-55 decision. Ivo acts before Moss that day. Their gathering capacities and the available stock are listed separately.',rows:[hRow('Available food',hNumber(patch.stock)),hRow('Ivo’s task capacity',hNumber(hAgent(start,8).gatherRate)),hRow('Moss’s task capacity',hNumber(hAgent(start,12).gatherRate))],location:{x:15,y:6}},
+   {id:'later-receipt',title:'The next-day handover',day:56,body:`Moss transfers ${hNumber(later.evidence.amount)} food to Ivo. This receipt establishes the later transfer, but does not say whether the previous day’s transfer was necessary.`,rows:[hRow('Sender','Moss'),hRow('Recipient','Ivo'),hRow('Recorded amount',hNumber(later.evidence.amount))],location:{x:15,y:6}}
+  ],
+  hypotheses:[{id:'transfer',label:'The day-55 transfer is needed to make Ivo eligible for help: both interruptions prevent the second handover.'},{id:'activity',label:'The interruptions change later stocks differently: only one prevents the second handover.'}],
+  predictions:[{id:'remains',label:'Moss still gives Ivo food on day 56.'},{id:'absent',label:'Moss gives Ivo no food on day 56.'},{id:'uncertain',label:'I’m not sure yet; inspect the workdays before concluding.'}],
+  map:{width:start.width,height:start.height,cells:start.cells.map(({x,y,terrain,resource})=>({x,y,terrain,resource})),markers:[{x:15,y:6,label:'Ada / Ivo and shared grove'},{x:14,y:6,label:'Moss at dusk'},{x:15,y:3,label:'Other food grove'}],bridge:{...start.bridge}},
+  reconstruction:{prompt:'Select an interruption, record a forecast, and inspect the two workdays.',options},
+  solution:{hypothesis:'activity',prediction:'remains',requiredTests:['omit-gift-workday','forget-ivo-ada'],evidencePairs:[['first-receipt','grove'],['stores','grove'],['grove','later-receipt'],['first-receipt','later-receipt'],['stores','later-receipt']],
+   requiredFeedback:'Inspect both proposed interruptions before comparing their effects. One replay alone cannot settle the comparative question.',
+   contradiction:attempt=>attempt.testedIds.includes('omit-gift-workday')?'The selective omission removes the day-55 transfer, yet Moss still gives Ivo food on day 56. That is a counterexample to necessity of that specific transfer.':attempt.testedIds.includes('forget-ivo-ada')?'This replay cannot by itself prove that the transfer is necessary; inspect the selective workday omission.':'Inspect the two proposed interruptions before deciding whether they have the same later effect.',
+   explanation:'The specific day-55 transfer is not necessary: the workday-omission replay removes it yet preserves Moss’s day-56 gift. Removing the starting help association instead makes Ivo gather first on day 55, leaving Moss only 1.02 food to harvest. Ivo still gives Ada 2.8 food on day 56 without that remembered help; the intervention does not ban later gifts. Before Moss’s next choice he lacks the required surplus and Ivo lacks the required need. With the sharing workday occupied, Moss keeps his full harvest; Ivo’s later ordinary transfer and meal make him eligible for help. This is an activity-and-stock effect in these two workdays, not repayment of a favor to Moss or a universal result of forgetting.',
+   timeline:['Day 55, recorded: Ivo gives Ada 2.8; Moss takes 6.38 from the unharvested grove.','Day 56, recorded: Moss has 8.39 and Ivo 1.99 immediately before Moss chooses; the 2.8 gift occurs.','Starting association removed: Ivo harvests 5.45 first on day 55, leaving Moss 1.02. Ivo gives Ada 2.8 on day 56; Moss gives Ivo nothing that day.','Selected transfer omitted but its workday occupied: Moss still harvests 6.38. Ivo gives Ada 2.69 on day 56 and eats, leaving 2.10 before Moss; the gift survives.']},
+  getComparison:(id='omit-gift-workday')=>{const pair=branches.get(id);if(!pair)throw Error('Choose an available reconstruction.');return cloneWorld(pair);}
+ };
+}
+
+
+
+
+const vFmt=n=>Number(n).toFixed(2),vRow=(label,value)=>({label,value:String(value)});
+const vAgent=w=>w.agents.find(a=>a.id===7);
+function vFrame(w){const a=vAgent(w);return {day:w.day,x:a.x,y:a.y,food:a.food,wood:a.wood,bridgeOpen:w.bridge.open,bridgeRepair:w.bridge.repair};}
+function vTrace(start){
+ const w=cloneWorld(start),frames=[vFrame(w)];
+ for(let n=0;n<4;n++){advance(w,1);frames.push(vFrame(w));}
+ validateWorld(w);const s=summarize(w);if(Math.abs(s.foodBalanceError)>1e-7||Math.abs(s.woodBalanceError)>1e-7)throw Error('Window case resources do not balance.');
+ return {w,frames};
+}
+function createWindowCase(){
+ const start=createWorld(73);advance(start,25);applyIntervention(start,'drought');applyIntervention(start,'reports');advance(start,11);
+ const changed=cloneWorld(start);applyIntervention(changed,'block-report',{day:37,actor:9,target:7});
+ const recorded=vTrace(start),withheld=vTrace(changed);
+ const report=recorded.w.events.find(e=>e.type==='report'&&e.day===37&&e.actor===9&&e.target===7);
+ const departure=recorded.w.events.find(e=>e.type==='destination'&&e.day===38&&e.actor===7);
+ if(!report||!departure)throw Error('Window-case report and departure no longer reproduce.');
+ const at=(branch,day)=>branch.frames.find(f=>f.day===day),harvests=(branch,day)=>branch.w.events.filter(e=>e.day>=37&&e.day<=day&&e.actor===7&&e.type==='gather'&&e.evidence.resource==='food');
+ const total=(branch,day)=>harvests(branch,day).reduce((n,e)=>n+e.evidence.amount,0);
+ const earlyA=at(recorded,39),earlyB=at(withheld,39),pairs=new Map();
+ const options=[40,39].map(day=>{
+  const id=`through-${day}`,a=at(recorded,day),b=at(withheld,day);
+  const pair={format:'common-ground-comparison',version:1,scenario:'none',measurementDay:day,baseline:cloneWorld(start),experiment:cloneWorld(changed)};validateComparison(pair);pairs.set(id,pair);
+  const receipt=(branch,label)=>({title:label,steps:[{heading:`End of day ${day}`,rows:[vRow('Position',`(${at(branch,day).x}, ${at(branch,day).y})`),vRow('Private food',vFmt(at(branch,day).food)),vRow('Food gathered since day 36',vFmt(total(branch,day)))]}],receipts:harvests(branch,day).map(e=>`Day ${e.day}: Hana gathers ${vFmt(e.evidence.amount)} food at (${e.location.x}, ${e.location.y}).`)});
+  return {id,label:`Observe both branches through day ${day}`,prompt:`Hold the one-message intervention fixed. Observe both branches through the end of day ${day}, including all ordinary movement, harvesting and meals.`,unchanged:['Same day-36 stocks and positions','Only June’s one day-37 message differs','Weather, observation, movement and collection rules','Keyed chance draws'],correctPrediction:a.food>b.food?'report-ahead':a.food<b.food?'withheld-ahead':'tied',result:{
+   heading:`Replay: end-of-day ${day} tally`,body:`Hana has ${vFmt(a.food)} food with the report and ${vFmt(b.food)} with that message withheld. This is a comparison at this date, not a claim about a permanent winner.`,measurementDay:day,
+   facts:[vRow('Report branch · private food',vFmt(a.food)),vRow('Withheld branch · private food',vFmt(b.food)),vRow(`Report branch · gathered, days 37–${day}`,vFmt(total(recorded,day))),vRow(`Withheld branch · gathered, days 37–${day}`,vFmt(total(withheld,day)))],
+   visual:{subject:'Hana',recorded:recorded.frames.filter(f=>f.day<=day),replay:withheld.frames.filter(f=>f.day<=day)},orderedNote:'These are end-of-day stocks after all ordinary activity and meals. Receipts cover the selected interval.',ordered:[receipt(recorded,'Report-branch receipts'),receipt(withheld,'Withheld-branch receipts')]
+  }};
+ });
+ return {id:'window',title:'The Day-39 Ledger',subtitle:'Two routes and a dated tally.',
+  brief:'At the end of day 39, Hana has less food in the branch where she received a report. The other branch withheld that one message. Does the same ranking hold at the end of the next day?',
+  question:'How do the private food stocks compare at the end of day 40?',
+  rules:['Residents move up to two adjacent tiles per workday and gather upon reaching a viable food patch. A trip can span several days.','Each resident consumes up to 0.9 food after their daily activity. Compare the same end-of-day date and the same metric.','Decisions use dated stock estimates at decision time; they do not optimize every future arrival or guarantee the best long-term outcome. Future growth and other harvesters can change arrival stocks.','The two branches start with identical physical state. One June → Hana report on day 37 is withheld in one branch; subsequent behavior follows the same rules and keyed chance draws.'],
+  clues:[
+   {id:'early-tally',title:'The day-39 tally',day:39,body:'These are the supplied early measurements from the two controlled branches. Food is private stock after the day’s ordinary meal.',rows:[vRow('With report',vFmt(earlyA.food)+' food'),vRow('Message withheld',vFmt(earlyB.food)+' food'),vRow('Report-branch harvest since day 36',vFmt(total(recorded,39))),vRow('Withheld-branch harvest',vFmt(total(withheld,39)))]},
+   {id:'trip',title:'The unfinished trip',day:39,body:`The report branch records Hana choosing (${departure.evidence.site.x}, ${departure.evidence.site.y}) on day 38, a six-step trip. At dusk on day 39 she is at (${earlyA.x}, ${earlyA.y}). She has not collected food on that trip.`,rows:[vRow('Daily movement','2 adjacent steps'),vRow('Hana’s gathering capacity',vFmt(vAgent(start).gatherRate)+' food'),vRow('Recorded destination','(20, 3)'),vRow('Day-39 position','(19, 4)')],location:{x:20,y:3}},
+   {id:'near-receipt',title:'The shorter trip’s receipt',day:39,body:`The withheld branch reaches (18, 11) on day 39 and gathers ${vFmt(total(withheld,39))} food.`,rows:[vRow('Collection day','39'),vRow('Collection site','(18, 11)')],location:{x:18,y:11}},
+   {id:'report',title:'The earlier stock count',day:37,body:`June conveys a day-37 observation of ${vFmt(report.evidence.reportedStock)} food at (18, 11). A dated count does not freeze future growth or consumption.`,rows:[vRow('Message day','37'),vRow('Observed day',report.evidence.observedDay),vRow('Site','(18, 11)')],location:{x:18,y:11}}
+  ],
+  hypotheses:[{id:'persistent',label:'The longer trip’s collection still leaves the report branch behind on day 40.'},{id:'window',label:'The longer trip’s later collection overtakes the earlier collection on day 40.'},{id:'tied',label:'The later collection makes up exactly the gap: the inventories tie on day 40.'}],
+  predictions:[{id:'report-ahead',label:'The report branch has more private food at the selected date.'},{id:'withheld-ahead',label:'The withheld branch has more private food at the selected date.'},{id:'tied',label:'The branches have equal private food at the selected date.'},{id:'uncertain',label:'I’m not sure yet; inspect the selected date.'}],
+  map:{width:start.width,height:start.height,cells:start.cells.map(({x,y,terrain,resource})=>({x,y,terrain,resource})),markers:[{x:19,y:8,label:'Hana at the checkpoint'},{x:18,y:11,label:'Shorter-trip grove'},{x:20,y:3,label:'Recorded longer-trip destination'}],bridge:{...start.bridge}},
+  reconstruction:{prompt:'Choose a measurement date for the same controlled pair.',options},
+  solution:{hypothesis:'window',prediction:'report-ahead',requiredTests:['through-40'],evidencePairs:[['early-tally','trip'],['trip','near-receipt'],['trip','report'],['early-tally','near-receipt']],requiredFeedback:'The question concerns day 40. Repeating the supplied day-39 measurement cannot settle the next-day ranking.',
+   contradiction:attempt=>attempt.testedIds.includes('through-40')?'On day 40 Hana completes the longer trip and has more private food in the report branch. The supplied day-39 lead did not persist to that date.':'Observe day 40 before deciding whether the day-39 ranking persists. The earlier tally cannot settle a later observation.',
+   explanation:'The day-39 comparison catches one branch after collection and the other while still traveling. On day 40 Hana reaches (20, 3) and gathers 5.96 food, ending with 12.76; the withheld branch has 11.80. The ranking reverses across these two dates. This demonstrates sensitivity to the observation window, not permanent harm from messages, optimal planning or a general information benefit.',
+   timeline:['Day 37: a fresh depletion report reaches Hana in one branch.','Day 38: the branches choose different food trips.','Day 39: the shorter trip has yielded 5.00 food; the longer trip is still underway.','Day 40: the longer trip yields 5.96 food. Private-stock ranking reverses.']},
+  getComparison:(id='through-40')=>{const pair=pairs.get(id);if(!pair)throw Error('Choose an available measurement date.');return cloneWorld(pair);}
+ };
+}
+
+
+
+
+
+
+const fmt=(n,d=2)=>Number(n).toFixed(d);
+const pos=a=>`(${a.x}, ${a.y})`;
+const row=(label,value)=>({label,value:String(value)});
+const resident=(w,id)=>w.agents.find(a=>a.id===id);
+const event=(w,predicate)=>{const e=w.events.find(predicate);if(!e)throw Error('A recorded case no longer reproduces.');return e;};
+function balanced(w){const s=summarize(w);if(Math.abs(s.foodBalanceError)>1e-7||Math.abs(s.woodBalanceError)>1e-7)throw Error('Case resources do not balance.');}
+function crisis(day){const w=createWorld(42);advance(w,25);applyIntervention(w,'drought');applyIntervention(w,'bridge');advance(w,day-25);return w;}
+function mapOf(w,markers){return {width:w.width,height:w.height,cells:w.cells.map(({x,y,terrain,resource})=>({x,y,terrain,resource})),markers,bridge:{...w.bridge}};}
+function comparison(base,fork){const data={format:'common-ground-comparison',version:1,scenario:'none',baseline:base,experiment:fork};validateComparison(data);return ()=>cloneWorld(data);}
+function finish(c){for(const w of [c.getComparison().baseline,c.getComparison().experiment])balanced(w);return c;}
+function physicalFrames(start,actor,days){
+ const w=cloneWorld(start),frames=[];
+ for(let offset=0;offset<=days;offset++){
+  if(offset)advance(w,1);
+  const a=resident(w,actor);
+  frames.push({day:w.day,x:a.x,y:a.y,food:a.food,wood:a.wood,bridgeOpen:w.bridge.open,bridgeRepair:w.bridge.repair});
+ }
+ balanced(w);return frames;
+}
+
+function detour(){
+ const start=createWorld(19);advance(start,25);applyIntervention(start,'drought');applyIntervention(start,'reports');advance(start,4);
+ const altered=cloneWorld(start);applyIntervention(altered,'block-report',{day:30,actor:4,target:14});
+ const base=cloneWorld(start),fork=cloneWorld(altered);advance(base,3);advance(fork,3);balanced(base);balanced(fork);
+ const old=resident(start,14).known[4*24+5];
+ const survey=event(base,e=>e.type==='report'&&e.day===30&&e.actor===4&&e.target===14);
+ const normalTrip=event(base,e=>e.type==='destination'&&e.day===30&&e.actor===14);
+ const changedTrip=event(fork,e=>e.type==='destination'&&e.day===30&&e.actor===14);
+ const normalHarvest=event(base,e=>e.type==='gather'&&e.day===32&&e.actor===14);
+ const changedHarvest=event(fork,e=>e.type==='gather'&&e.day===32&&e.actor===14);
+ const sightDistance=Math.abs(resident(start,14).x-survey.evidence.site.x)+Math.abs(resident(start,14).y-survey.evidence.site.y);
+ return finish({id:'detour',title:'The Detour',subtitle:'A tempting grove is passed by.',
+  brief:'Orin starts at (4, 8). He passes the nearer food patch and heads toward (8, 6). The crossing stays open. What changed his decision?',
+  question:'Why did Orin reject the nearer patch?',
+  rules:['Residents can inspect stocks within two adjacent tiles, measured horizontally and vertically.','Nearby residents may pass along dated observations. Older stock figures become growth forecasts.','A foraging destination must be expected to hold at least 0.4 food.','New trips compare one load of expected food against travel time; surplus beyond the gatherer’s capacity gives no extra benefit. Small repeatable daily preferences can break close choices. You may record uncertainty before testing.'],
+  clues:[
+   {id:'notebook',title:'The old field notes',day:old.seenAt,body:`The dated count in Orin's notes for the nearer patch held ${fmt(old.stock)} food. By day 30, a growth-only forecast would put it at ${fmt(changedTrip.evidence.believedStock)}. His older information for (8, 6) still predicts ${fmt(normalTrip.evidence.believedStock)}.`,rows:[row('Nearer patch','(5, 4)'),row('Nearer walk','5 steps'),row('Other walk','6 steps'),row('Orin’s gathering capacity',fmt(resident(start,14).gatherRate)+' food per task')],location:{x:5,y:4}},
+   {id:'survey',title:'A newer stock count',day:survey.evidence.observedDay,body:`A fresh count finds only ${fmt(survey.evidence.reportedStock)} food at (5, 4). It reflects recent gathering, which the growth-only forecast could not see.`,rows:[row('Observed stock',fmt(survey.evidence.reportedStock)),row('Useful-patch threshold','0.40')],location:{x:5,y:4}},
+   {id:'tracks',title:'The decision place',day:30,body:`Orin is at ${pos(resident(start,14))} when choosing his trip. The nearer patch is ${sightDistance} steps away, beyond his two-tile sight. His local inspection reaches two steps from that position.`,rows:[row('Day 31 route','(6, 6)'),row('Day 32 arrival','(8, 6)'),row('Day 32 harvest',fmt(normalHarvest.evidence.amount)+' food')],location:{x:4,y:8}},
+   {id:'crossing',title:'The crossing survey',day:30,body:'The bridge is open. Both candidate patches and Orin are on the west bank, with clear routes to both groves.',rows:[row('Crossing','Open'),row('Route obstruction','None')],location:{x:11,y:8}}
+  ],
+  hypotheses:[{id:'relay',label:'A relayed observation made the old nearby estimate obsolete.'},{id:'own-survey',label:'Orin personally surveyed the near grove before choosing.'},{id:'bridge',label:'A closed crossing forced him away from the near grove.'}],
+  predictions:[{id:'near',label:'Without the fresh camp report, he targets (5, 4).'},{id:'far',label:'Without that report, he still targets (8, 6).'},{id:'stay',label:'Without that report, he stays at camp.'}],
+  map:mapOf(start,[{x:4,y:8,label:'Orin'},{x:5,y:4,label:'Near grove'},{x:8,y:6,label:'Other grove'}]),
+  reconstruction:{prompt:'Keep starting positions, supplies, weather and chance events fixed. Withhold the one fresh camp report on day 30, then replay to day 32.',unchanged:['Physical starting state','Weather and growth rules','Local sight and chance events'],result:{heading:'The old estimate wins again.',body:`With that one report withheld, Orin targets (5, 4). Both routes start with the same two steps, then separate on day 31.`,facts:[row('Recorded destination','(8, 6)'),row('Reconstruction destination',pos(changedTrip.evidence.site)),row('Recorded day-32 harvest',fmt(normalHarvest.evidence.amount)+' food'),row('Reconstruction harvest',fmt(changedHarvest.evidence.amount)+' food')]}},
+  solution:{hypothesis:'relay',prediction:'near',evidencePairs:[['survey','tracks'],['survey','notebook'],['survey','crossing']],explanation:'The new count is below the useful-patch threshold and outside Orin’s sight. It must reach his decision through a relayed observation. His own older notes would favor the nearer grove. The open bridge does not explain the change.',timeline:['Earlier: the near grove is remembered as productive.','Day 30: Eli passes Orin the newer, depleted stock count.','Day 31: Orin takes the route toward the other grove.','Day 32: the two controlled branches yield 5.31 and 0.75 food. This shows a changed immediate harvest, not a permanent advantage.']},
+  getComparison:comparison(start,altered)
+ });
+}
+
+function crossing(){
+ const start=crisis(37),altered=cloneWorld(start);applyIntervention(altered,'skip-repair',{day:38,actor:10});
+ const base=cloneWorld(start),fork=cloneWorld(altered),rain=cloneWorld(start);applyIntervention(rain,'rain');advance(base,1);advance(fork,2);advance(rain,1);
+ balanced(base);balanced(fork);balanced(rain);
+ const donors=start.agents.filter(a=>a.wood>0).map(a=>({a,steps:findPath(start,a,{x:a.x<11?10:13,y:8}).length}));
+ const full=donors.filter(({a})=>a.wood>=3);
+ const repair=event(base,e=>e.type==='repair'&&e.day===38&&e.actor===10);
+ const reopening=event(fork,e=>e.type==='bridge-open');
+ return finish({id:'crossing',title:'The Crossing',subtitle:'A path reopens before dusk.',
+  brief:'The crossing is incomplete at the end of day 37. It reopens on day 38 after one person delivers the final three timber. Several residents carry enough wood. Who could have reached the work site in time?',
+  question:'Who could supply the final three timber in one workday?',
+  rules:['Residents can move up to two adjacent tiles and perform one physical work task in a day. A repair can be completed upon reaching the shore.','Timber is spent only when a repair contribution is made. Food, rain and memories cannot replace timber.','The west work site is (10, 8); the east work site is (13, 8). The bridge is impassable until complete.'],
+  clues:[
+   {id:'materials',title:'The work-site tally',day:37,body:`Workers have supplied ${start.bridge.repair} of ${start.bridge.required} timber. Exactly three more are needed. The question concerns the last contribution, not who deserves credit for all earlier work.`,rows:[row('Completed','15 / 18 timber'),row('Missing','3 timber')],location:{x:10,y:8}},
+   {id:'roster',title:'Carriers at dusk',day:37,body:'This is the full roster carrying at least three timber. Every other resident carries less than the missing amount.',rows:full.map(({a,steps})=>row(a.name,`${pos(a)} · ${fmt(a.wood,0)} timber · ${steps} steps to their shore`))},
+   {id:'paths',title:'The shore approaches',day:37,body:'The route from (9, 7) to (10, 8) takes two adjacent steps. From (9, 11), it takes four. From (17, 8) to (13, 8), it takes four. The broken bridge offers no shortcut.',rows:[row('Daily movement','2 steps'),row('West shore','(10, 8)'),row('East shore','(13, 8)')],location:{x:10,y:8}},
+   {id:'rain',title:'The weather note',day:37,body:'The western groves are under drought. Ending it restores their usual growth rate. Applying a weather change credits no immediate timber or repair progress; later work remains to be inspected.',rows:[row('Weather at dusk','Drought'),row('Immediate timber credit','0')]}
+  ],
+  hypotheses:[{id:'kit',label:'Kit could carry the final timber to the west shore.'},{id:'ada',label:'Ada could carry the final timber to the west shore.'},{id:'dara',label:'Dara could carry the final timber to the east shore.'},{id:'rain',label:'Rain could complete the crossing without a timber delivery.'}],
+  predictions:[{id:'delay',label:'Omitting Kit’s contribution retains his wood and leaves the crossing shut on day 38.'},{id:'same',label:'Omitting Kit’s contribution still leaves the crossing open on day 38.'},{id:'lost',label:'Omitting Kit’s contribution destroys his timber.'}],
+  map:mapOf(start,[{x:9,y:7,label:'Kit'},{x:9,y:11,label:'Ada'},{x:17,y:8,label:'Dara / Pip'},{x:10,y:8,label:'West work site'},{x:13,y:8,label:'East work site'}]),
+  reconstruction:{prompt:'Keep all supplies, routes, weather and chance events fixed. Omit only Kit’s day-38 contribution after he reaches the shore, retaining his timber.',unchanged:['Starting supplies and positions','Other residents’ work','Weather and chance events'],result:{heading:'The crossing waits one more day.',body:`Kit retains three timber. The crossing remains at 15/18 on day 38; another worker completes it on day ${reopening.day}.`,facts:[row('Recorded reopening','Day 38'),row('Reconstruction reopening','Day '+reopening.day),row('Timber discarded','0')]}},
+  solution:{hypothesis:'kit',prediction:'delay',evidencePairs:[['materials','roster'],['paths','roster'],['rain','roster']],explanation:'Kit has the missing three timber and is only two steps from the west work site. The other full-timber carriers cannot reach their work site within one day. Rain supplies no wood. Earlier contributors remain necessary; this identifies the final delivery only.',timeline:['Day 37: five earlier contributions have brought the crossing to 15/18.','Day 38: Kit reaches (10, 8) and supplies the final three timber.','With only his contribution omitted: he keeps the wood and the crossing stays shut that day.','Day 39: Ada completes the crossing in the reconstruction.']},
+  getComparison:comparison(start,altered)
+ });
+}
+
+function meal(){
+ const start=crisis(54),altered=cloneWorld(start);applyIntervention(altered,'forget-helper',{actor:8,helper:0});
+ const base=cloneWorld(start),fork=cloneWorld(altered);advance(base,1);advance(fork,1);balanced(base);balanced(fork);
+ const extended=cloneWorld(fork);advance(extended,1);balanced(extended);
+ const nextGift=event(extended,e=>e.type==='gift'&&e.day===56&&e.actor===8&&e.target===0);
+ const earlier=event(start,e=>e.type==='gift'&&e.day===54&&e.actor===0&&e.target===8);
+ const gift=event(base,e=>e.type==='gift'&&e.day===55&&e.actor===8&&e.target===0);
+ const adaBefore=resident(start,0),ivoBefore=resident(start,8),adaAfter=resident(base,0),adaChanged=resident(fork,0);
+ return finish({id:'meal',title:'The Extra Meal',subtitle:'A handover changes the evening stores.',
+  brief:'Ada leaves a food patch with more supplies than her own gathering could explain. Ivo has a surplus nearby. A receipt shows they helped each other before. Can that history explain this particular exchange?',
+  question:'Did spare food alone explain Ivo’s day-55 gift, or did remembered help change its timing?',
+  rules:['A full daily meal consumes 0.9 food. Sharing transfers real supplies; it does not create food.','Surplus makes giving possible but does not require a gift. Remembered help may affect a resident’s decision.','Two gifts alone cannot prove a memory cause. A controlled replay must hold supplies and other circumstances fixed.'],
+  clues:[
+   {id:'supplies',title:'The evening stores',day:54,body:`Ada and Ivo are both at ${pos(adaBefore)}. Ada has ${fmt(adaBefore.food)} food; Ivo has ${fmt(ivoBefore.food)}. These stores are retained in both controlled branches.`,rows:[row('Ada',fmt(adaBefore.food)+' food'),row('Ivo',fmt(ivoBefore.food)+' food')],location:{x:15,y:6}},
+   {id:'route',title:'Ada’s next walk',day:55,body:`Ada reaches ${pos(adaAfter)}. She has not yet reached her food destination (15, 3), and no pantry is reachable along this two-step walk. She consumes one daily meal.`,rows:[row('Opening food',fmt(adaBefore.food)),row('Closing food',fmt(adaAfter.food)),row('Daily consumption','0.90'),row('Unexplained addition',fmt(adaAfter.food-adaBefore.food+.9))],location:{x:15,y:4}},
+   {id:'receipt',title:'An earlier handover',day:54,body:`The supply ledger records Ada handing Ivo ${fmt(earlier.evidence.amount)} food. This establishes previous help. By itself it cannot tell us why a later gift occurs.`,rows:[row('From','Ada'),row('To','Ivo'),row('Amount',fmt(earlier.evidence.amount)+' food')],location:{x:15,y:6}},
+   {id:'transfer',title:'The later handover',day:55,body:`A recorded transfer of ${fmt(gift.evidence.amount)} food from Ivo accounts for Ada’s added supplies. Was Ivo’s surplus enough to require this transfer? The controlled replay can distinguish that from a remembered-help effect.`,rows:[row('Sender','Ivo'),row('Recipient','Ada'),row('Amount',fmt(gift.evidence.amount)+' food')],location:{x:15,y:6}}
+  ],
+  hypotheses:[{id:'memory',label:'Remembered help changed this particular gift decision.'},{id:'surplus',label:'Ivo would give the same food in response to current surplus and need, even without remembered help.'},{id:'pantry',label:'Ada collected the extra food from a pantry.'}],
+  predictions:[{id:'less',label:'Without that association, no gift occurs on day 55 and Ada ends that day with 1.2 food.'},{id:'same',label:'With the same surplus, the gift continues and Ada still ends with 4 food.'},{id:'vanish',label:'The gift stops but Ada keeps her opening 2.1 food.'}],
+  map:mapOf(start,[{x:15,y:6,label:'Ada / Ivo'},{x:15,y:4,label:'Ada’s next position'},{x:15,y:3,label:'Food destination'},{x:19,y:8,label:'East pantry'}]),
+  reconstruction:{prompt:'Keep starting supplies, positions, weather and chance events fixed. Remove only Ivo’s remembered association with Ada’s previous help, then replay one day.',unchanged:['Starting food and positions','Other residents’ memories','Weather and chance events'],result:{heading:'The day-55 transfer is absent.',body:`Ivo retains his starting surplus. Ada takes the same walk but receives no gift on day 55, ending with ${fmt(adaChanged.food)} instead of ${fmt(adaAfter.food)} food.`,facts:[row('Recorded Ada food',fmt(adaAfter.food)),row('Reconstruction Ada food',fmt(adaChanged.food)),row('Starting Ivo food in both',fmt(ivoBefore.food)),row('Ada’s position in both',pos(adaAfter))]}},
+  solution:{hypothesis:'memory',prediction:'less',evidencePairs:[['receipt','transfer'],['supplies','receipt'],['route','receipt'],['supplies','transfer'],['route','transfer'],['supplies','route']],explanation:'Ivo is the physical source of the extra 2.8 food. Surplus makes that transfer possible, but preserving surplus while removing only his remembered-help association prevents the gift on day 55. In an extended replay, Ivo still gives Ada 2.8 food on day 56 with no remembered Ada-help count. The association changes the timing of this programmed decision; it does not prohibit later giving or establish a human motive.',timeline:['Day 54: Ada hands Ivo 1.93 food; he records her help.','Day 55: Ivo’s 2.8-food transfer lets Ada end her walk with 4 food after her daily meal.','Controlled replay: food and positions are held fixed; only that help association is removed.','Day 55 in the replay: no Ivo → Ada gift; Ada ends at the same position with 1.2 food.',`Day 56 in the extended replay: Ivo gives Ada ${fmt(nextGift.evidence.amount)} food despite having no remembered Ada-help count.`]},
+  getComparison:comparison(start,altered)
+ });
+}
+
+// Every selectable reconstruction is an actual engine branch, not a narrated answer.
+function selectable(c){
+ const original=c.getComparison, start=original().baseline, branches=new Map();
+ const canonical={detour:'withhold-report',crossing:'omit-kit',meal:'forget-ivo'}[c.id];
+ const labels={detour:['Withhold the fresh camp report','Keep the camp report'],crossing:['Omit Kit’s contribution','Omit Ada’s contribution','Omit Dara’s contribution','End the drought; retain all work'],meal:['Remove Ivo’s association with Ada’s help','Remove Ada’s association with Ivo’s help','Keep both help associations']};
+ const ids={detour:['withhold-report','retain-report'],crossing:['omit-kit','omit-ada','omit-dara','rain-only'],meal:['forget-ivo','forget-ada','retain-memory']}[c.id];
+ const options=ids.map((id,index)=>{
+  const altered=cloneWorld(start);
+  if(id==='withhold-report')applyIntervention(altered,'block-report',{day:30,actor:4,target:14});
+  if(id.startsWith('omit-'))applyIntervention(altered,'skip-repair',{day:38,actor:{'omit-kit':10,'omit-ada':0,'omit-dara':3}[id]});
+  if(id==='rain-only')applyIntervention(altered,'rain');
+  if(id==='forget-ivo')applyIntervention(altered,'forget-helper',{actor:8,helper:0});
+  if(id==='forget-ada')applyIntervention(altered,'forget-helper',{actor:0,helper:8});
+  branches.set(id,comparison(start,altered));
+  const replay=cloneWorld(altered);advance(replay,c.id==='detour'?3:1);balanced(replay);
+  let result,correctPrediction;
+  if(c.id==='detour'){
+   const trip=event(replay,e=>e.type==='destination'&&e.day===30&&e.actor===14),harvest=event(replay,e=>e.type==='gather'&&e.day===32&&e.actor===14);
+   correctPrediction=trip.evidence.site.x===5?'near':'far';
+   result={heading:'Replay: destination and harvest',body:`Orin targets ${pos(trip.evidence.site)} on day 30. He gathers ${fmt(harvest.evidence.amount)} food on day 32.`,facts:[row('Recorded destination','(8, 6)'),row('Replay destination',pos(trip.evidence.site)),row('Recorded harvest','5.31 food'),row('Replay harvest',fmt(harvest.evidence.amount)+' food')]};
+  }else if(c.id==='crossing'){
+   correctPrediction=replay.bridge.open?'same':'delay';
+   result={heading:'Replay: end-of-day crossing tally',body:`At the end of day 38 the tally is ${replay.bridge.repair}/18. Omitted contributions spend no timber.`,facts:[row('Recorded day-38 crossing','Open'),row('Replay day-38 crossing',replay.bridge.open?'Open':'Closed'),row('Replay tally',replay.bridge.repair+' / 18'),row('Kit’s retained timber',fmt(resident(replay,10).wood,0))]};
+  }else{
+   const a=resident(replay,0),gift=replay.events.find(e=>e.type==='gift'&&e.day===55&&e.actor===8&&e.target===0);
+   correctPrediction=gift?'same':'less';
+   result={heading:'Replay: day-55 handover and closing stores',body:`Ada takes her walk to ${pos(a)} and finishes with ${fmt(a.food)} food. Ivo’s starting surplus remains ${fmt(resident(start,8).food)} in both branches.`,facts:[row('Recorded Ada food','4.00'),row('Replay Ada food',fmt(a.food)),row('Ivo → Ada, day 55',gift?fmt(gift.evidence.amount)+' food':'None'),row('Ada’s replay position',pos(a))]};
+  }
+  const actor=c.id==='detour'?14:c.id==='crossing'?10:0,days=c.id==='detour'?3:1;
+  result.visual={subject:resident(start,actor).name,recorded:physicalFrames(start,actor,days),replay:physicalFrames(altered,actor,days)};
+  const unchanged=c.id==='crossing'?['Starting supplies and positions','Movement and repair rules','Keyed chance events',...(id==='rain-only'?[]:['Weather'])]:c.id==='meal'?['Starting food and positions','Other help associations','Weather and keyed chance events']:c.reconstruction.unchanged;
+  return {id,label:labels[c.id][index],prompt:`${labels[c.id][index]}. Replay from the same starting checkpoint to day ${c.id==='detour'?32:c.id==='crossing'?38:55}.`,unchanged,result,correctPrediction};
+ });
+ c.reconstruction={prompt:'Choose a change to investigate. Record what you expect, inspect its replay, and revise your conclusion if the evidence changes it.',options};
+ c.solution.requiredTests=[canonical];
+ const general={detour:{near:'Orin targets the near grove (5, 4).',far:'Orin targets the other grove (8, 6).',stay:'Orin stays at camp.'},crossing:{delay:'The crossing stays shut on day 38; omitted work retains its timber.',same:'The crossing opens on day 38.',lost:'Omitted work destroys its timber.'},meal:{less:'No gift on day 55; Ada finishes that day with 1.2 food.',same:'The gift happens on day 55; Ada finishes that day with 4 food.',vanish:'No gift on day 55, but Ada finishes that day with her opening 2.1 food.'}};
+ c.predictions=c.predictions.map(p=>({id:p.id,label:general[c.id][p.id]}));
+ c.predictions.push({id:'uncertain',label:'I’m not sure yet; inspect the evidence before concluding.'});
+ c.getComparison=(id=canonical)=>{const get=branches.get(id);if(!get)throw Error('Choose an available reconstruction.');return get();};
+ return c;
+}
+let cache;
+function createCaseBook(){return cache??=( [...[detour(),crossing(),meal()].map(selectable),createHarderCase(),createWindowCase()] );}
+function judgeCase(c,attempt={}){
+ if(!c?.solution)return {correct:false,feedback:'Choose an available case.'};
+ if(!c.hypotheses.some(h=>h.id===attempt.hypothesis))return {correct:false,feedback:'Choose a cause to investigate.'};
+ if(!c.predictions.some(p=>p.id===attempt.prediction))return {correct:false,feedback:'Record a consequence prediction.'};
+ if(!attempt.tested)return {correct:false,feedback:'Inspect the controlled reconstruction before concluding; a plausible story alone is not evidence.'};
+ const option=c.reconstruction.options.find(o=>o.id===attempt.testId);
+ if(!option||!Array.isArray(attempt.testedIds)||!attempt.testedIds.includes(option.id))return {correct:false,feedback:'Inspect your chosen reconstruction before concluding.'};
+ if(attempt.hypothesis!==c.solution.hypothesis){
+  const contradictions={detour:'The grove is outside Orin’s sight and both routes stay on the open west bank. Which observation could reach him there?',crossing:'Check both the missing timber and the one-day travel limit. Enough wood is not enough if its carrier cannot arrive.',meal:'The ledger identifies Ivo as the giver. To test whether his current supplies and need explain the gift without past help, change the giver’s help association while retaining those supplies.'};
+  return {correct:false,feedback:c.solution.contradiction?c.solution.contradiction(attempt):contradictions[c.id]};
+ }
+ if(!c.solution.requiredTests.every(id=>attempt.testedIds.includes(id)))return {correct:false,feedback:c.solution.requiredFeedback??'Your proposed cause needs a selective test of its own. Inspect a reconstruction that changes it while preserving starting supplies; a different factor or retained-state replay cannot establish its effect.'};
+ if(attempt.prediction!==option.correctPrediction)return {correct:false,feedback:'Compare your current conclusion with the observed result of the selected reconstruction. You may revise an uncertain or mistaken forecast.'};
+ const evidence=new Set(Array.isArray(attempt.evidence)?attempt.evidence:[]);
+ if(!c.solution.evidencePairs.some(pair=>pair.every(id=>evidence.has(id))))return {correct:false,feedback:'Pin two relevant records that connect the cause to the outcome, not just the outcome itself.'};
+ return {correct:true,feedback:'The cause, evidence and controlled consequence fit. Read the reconstructed chain below.'};
+}
+
+
+
+
+const $ = id => document.getElementById(id);
+const node = (tag, className, text) => {
+  const element = document.createElement(tag);
+  if (className) element.className = className;
+  if (text !== undefined) element.textContent = text;
+  return element;
+};
+const displayOrder = ['harvest', 'meal', 'detour', 'crossing', 'window'];
+const book = [...createCaseBook()].sort((a, b) => displayOrder.indexOf(a.id) - displayOrder.indexOf(b.id));
+const investigations = new Map(book.map(c => [c.id, {
+  opened: new Set(), expanded: new Set(), pinned: new Set(),
+  hypothesis: '', prediction: '', testId: '', testedIds: new Set(), recordedPredictions: new Map(), visualFrames: new Map(), orderedOpen: new Map(), resolved: false,
+  feedback: '', highlight: null,
+}]));
+let currentId = book[0].id;
+const currentCase = () => book.find(c => c.id === currentId);
+const currentState = () => investigations.get(currentId);
+const notice = text => { $('notice').textContent = text; };
+
+function renderCovers() {
+  const root = $('case-covers');
+  root.replaceChildren();
+  book.forEach((c, index) => {
+    const state = investigations.get(c.id);
+    const button = node('button', `case-cover${c.id === currentId ? ' active' : ''}`);
+    button.type = 'button';
+    button.dataset.caseId = c.id;
+    button.setAttribute('aria-current', c.id === currentId ? 'page' : 'false');
+    const copy = node('span', 'cover-copy');
+    copy.append(node('strong', '', c.title), node('small', '', c.subtitle),
+      node('span', 'cover-state', state.resolved ? 'RESOLVED ✓' : state.opened.size ? 'IN PROGRESS' : 'OPEN THE FILE'));
+    button.append(node('span', 'cover-number', String(index + 1).padStart(2, '0')), copy);
+    button.addEventListener('click', () => {
+      currentId = c.id;
+      notice('');
+      renderCase();
+      [...root.children].find(child => child.dataset.caseId === c.id)?.focus();
+    });
+    root.append(button);
+  });
+  $('folio-count').textContent = String(book.length).padStart(2, '0');
+  $('progress').textContent = `${[...investigations.values()].filter(state => state.resolved).length} / ${book.length} cases resolved`;
+}
+
+function renderChoices(root, choices, kind) {
+  const state = currentState();
+  root.replaceChildren();
+  choices.forEach(choice => {
+    const label = node('label', 'choice');
+    const input = node('input');
+    input.type = 'radio';
+    input.name = kind;
+    input.value = choice.id;
+    input.checked = state[kind] === choice.id;
+    input.disabled = state.resolved;
+    input.addEventListener('change', () => {
+      state[kind] = choice.id;
+      state.feedback = '';
+      if (kind === 'prediction') renderTestResult();
+      renderControls();
+    });
+    label.append(input, node('span', '', choice.label));
+    root.append(label);
+  });
+}
+
+function restoreClueFocus(id, pin = false) {
+  const buttons = [...$('clue-cards').querySelectorAll(pin ? '.pin-button' : '.clue-toggle')];
+  buttons.find(button => button.dataset.clueId === id)?.focus();
+}
+
+function togglePin(clue) {
+  const state = currentState();
+  if (state.pinned.has(clue.id)) state.pinned.delete(clue.id);
+  else {
+    if (state.pinned.size >= 2) {
+      notice('Two clues are already pinned. Unpin one to choose another.');
+      return;
+    }
+    state.pinned.add(clue.id);
+  }
+  state.feedback = '';
+  notice(state.pinned.has(clue.id) ? `Pinned: ${clue.title}.` : `Unpinned: ${clue.title}.`);
+  renderClues();
+  renderPinned();
+  renderControls();
+}
+
+function renderClues() {
+  const c = currentCase(), state = currentState(), root = $('clue-cards');
+  root.replaceChildren();
+  c.clues.forEach((clue, index) => {
+    const expanded = state.expanded.has(clue.id);
+    const article = node('article', `clue-card${state.pinned.has(clue.id) ? ' pinned' : ''}`);
+    const toggle = node('button', 'clue-toggle');
+    toggle.type = 'button';
+    toggle.dataset.clueId = clue.id;
+    toggle.setAttribute('aria-expanded', String(expanded));
+    const bodyId = `clue-body-${c.id}-${index}`;
+    toggle.setAttribute('aria-controls', bodyId);
+    toggle.append(node('small', '', `DAY ${clue.day}`), node('strong', '', clue.title),
+      node('small', 'open-label', expanded ? '− Close note' : '+ Inspect note'));
+    toggle.addEventListener('click', () => {
+      if (expanded) state.expanded.delete(clue.id);
+      else {
+        state.expanded.add(clue.id);
+        state.opened.add(clue.id);
+        state.highlight = clue.location || null;
+      }
+      renderClues();
+      renderCovers();
+      drawMap();
+      restoreClueFocus(clue.id);
+    });
+    const body = node('div', 'clue-body');
+    body.id = bodyId;
+    body.hidden = !expanded;
+    // Only player-visible clue fields are rendered, never the underlying case object.
+    if (expanded) {
+      body.append(node('p', '', clue.body));
+      if (clue.rows?.length) {
+        const rows = node('dl', 'clue-rows');
+        for (const row of clue.rows) {
+          const line = node('div');
+          line.append(node('dt', '', row.label), node('dd', '', row.value));
+          rows.append(line);
+        }
+        body.append(rows);
+      }
+      const pin = node('button', 'pin-button', state.pinned.has(clue.id) ? '● Unpin clue' : '○ Pin clue');
+      pin.type = 'button';
+      pin.dataset.clueId = clue.id;
+      pin.disabled = state.resolved;
+      pin.setAttribute('aria-pressed', String(state.pinned.has(clue.id)));
+      pin.addEventListener('click', () => { togglePin(clue); restoreClueFocus(clue.id, true); });
+      body.append(pin);
+    }
+    article.append(toggle, body);
+    root.append(article);
+  });
+  $('clue-progress').textContent = `${state.opened.size} / ${c.clues.length} inspected`;
+}
+
+function renderPinned() {
+  const c = currentCase(), state = currentState(), root = $('pinned-clues');
+  root.replaceChildren();
+  $('pin-count').textContent = `${state.pinned.size} / 2`;
+  if (!state.pinned.size) root.append(node('li', 'empty', 'Your supporting clues will go here.'));
+  for (const id of state.pinned) {
+    const clue = c.clues.find(item => item.id === id), item = node('li');
+    item.append(node('span', '', clue.title));
+    const remove = node('button', '', 'Unpin');
+    remove.type = 'button';
+    remove.disabled = state.resolved;
+    remove.setAttribute('aria-label', `Unpin ${clue.title}`);
+    remove.addEventListener('click', () => {
+      togglePin(clue);
+      $('pinned-clues').querySelector('button')?.focus();
+    });
+    item.append(remove);
+    root.append(item);
+  }
+}
+
+function selectedTest() {
+  return currentCase().reconstruction.options.find(option => option.id === currentState().testId);
+}
+
+function renderReconstruction() {
+  const c = currentCase(), state = currentState(), select = $('reconstruction-choice');
+  const placeholder = node('option', '', 'Choose a controlled change…');
+  placeholder.value = '';
+  select.replaceChildren(placeholder);
+  for (const option of c.reconstruction.options) {
+    const item = node('option', '', option.label);
+    item.value = option.id;
+    select.append(item);
+  }
+  select.value = state.testId;
+  select.disabled = state.resolved;
+  const test = selectedTest();
+  $('reconstruction-prompt').textContent = test ? test.prompt :
+    'Choose what to change, then record a prediction. An uncertain prediction is welcome.';
+  $('reconstruction-unchanged').replaceChildren(...(test?.unchanged || []).map(condition => node('li', '', condition)));
+  $('reconstruction-unchanged').closest('details').hidden = !test;
+  renderTestHistory();
+  renderTestResult();
+}
+
+function renderTestHistory() {
+  const c = currentCase(), state = currentState(), root = $('test-history');
+  root.replaceChildren();
+  if (!state.testedIds.size) return;
+  root.append(node('p', 'detail-label', 'RECORDED RECONSTRUCTIONS'));
+  const buttons = node('div', 'test-history-buttons');
+  for (const id of state.testedIds) {
+    const test = c.reconstruction.options.find(option => option.id === id);
+    const button = node('button', '', test.label);
+    button.type = 'button';
+    button.setAttribute('aria-pressed', String(id === state.testId));
+    button.addEventListener('click', () => {
+      state.testId = id;
+      state.feedback = '';
+      renderReconstruction(); renderControls();
+      $('reconstruction-choice').focus();
+    });
+    buttons.append(button);
+  }
+  root.append(buttons);
+}
+
+function renderControls() {
+  const state = currentState(), tested = state.testedIds.has(state.testId);
+  $('run-test').disabled = !state.testId || !state.prediction || tested || state.resolved;
+  $('run-test').textContent = tested ? 'Result recorded' : 'Test this prediction';
+  $('test-hint').textContent = state.resolved ? 'This case is resolved.' : tested ?
+    'The actual result stays visible. Revise your conclusion if the evidence changes your mind.' :
+    state.testId && state.prediction ? 'Your prediction will be recorded with this reconstruction.' :
+    'Choose a reconstruction and record a prediction first. You can choose “uncertain”.';
+  $('submit-case').disabled = !state.hypothesis || !state.prediction || !tested || state.pinned.size !== 2 || state.resolved;
+  const missing = [];
+  if (!state.hypothesis) missing.push('choose a cause');
+  if (!state.testId) missing.push('choose a reconstruction');
+  if (!state.prediction) missing.push('record a prediction');
+  if (!tested) missing.push('run the chosen reconstruction');
+  if (state.pinned.size !== 2) missing.push('pin two clues');
+  $('submission-hint').textContent = state.resolved ? 'The causal chain is recorded below.' :
+    missing.length ? `To submit: ${missing.join(', ')}.` : 'A cause, an observed result, and two supporting clues. Ready to submit.';
+  $('feedback').textContent = state.feedback;
+}
+
+function renderTestResult() {
+  const c = currentCase(), state = currentState(), root = $('test-result');
+  root.replaceChildren();
+  if (!state.testedIds.has(state.testId)) return;
+  const original = c.predictions.find(item => item.id === state.recordedPredictions.get(state.testId));
+  const current = c.predictions.find(item => item.id === state.prediction);
+  root.append(node('p', 'recorded-prediction', `Before this reconstruction: ${original.label}`));
+  if (current && current.id !== original.id)
+    root.append(node('p', 'current-prediction', `Current conclusion: ${current.label}`));
+  const result = selectedTest().result;
+  root.append(node('h4', '', result.heading), node('p', '', result.body));
+  const facts = node('dl');
+  for (const fact of result.facts) {
+    const row = node('div');
+    row.append(node('dt', '', fact.label), node('dd', '', fact.value));
+    facts.append(row);
+  }
+  root.append(facts);
+  if (result.visual) renderVisual(root, result.visual);
+  if (result.ordered?.length) renderOrdered(root, result.ordered, result.orderedNote);
+}
+
+function renderOrdered(root, branches, note) {
+  const state = currentState(), testId = state.testId;
+  if (!state.orderedOpen.has(testId)) state.orderedOpen.set(testId, new Set(currentCase().id === 'harvest' ? branches.map((_, i) => i) : []));
+  const opened = state.orderedOpen.get(testId);
+  const section = node('section', 'ordered-evidence');
+  section.append(node('p', 'detail-label', 'THE ORDERED WORKDAYS'),
+    node('p', 'ordered-note', note || 'These are before-choice snapshots. Residents who acted earlier have already eaten.'));
+  branches.forEach((branch, index) => {
+    const details = node('details', 'ordered-branch'); details.dataset.branchIndex = String(index);
+    details.open = opened.has(index);
+    details.addEventListener('toggle', () => {
+      if (details.open) opened.add(index); else opened.delete(index);
+    });
+    details.append(node('summary', '', branch.title));
+    const content = node('div', 'ordered-content'), steps = node('ol', 'ordered-steps');
+    for (const step of branch.steps) {
+      const item = node('li'); item.append(node('h5', '', step.heading));
+      const rows = node('dl');
+      for (const row of step.rows) {
+        const line = node('div'); line.append(node('dt', '', row.label), node('dd', '', row.value)); rows.append(line);
+      }
+      item.append(rows); steps.append(item);
+    }
+    content.append(steps, node('p', 'detail-label', 'RECORDED RECEIPTS'));
+    const receipts = node('ul', 'ordered-receipts');
+    for (const receipt of branch.receipts) receipts.append(node('li', '', receipt));
+    content.append(receipts); details.append(content); section.append(details);
+  });
+  root.append(section);
+}
+
+const quantity = number => Number(number).toLocaleString(undefined, { maximumFractionDigits: 2 });
+
+function renderVisual(root, visual) {
+  const state = currentState(), index = state.visualFrames.get(state.testId) ?? visual.recorded.length - 1;
+  const section = node('section', 'replay-visual');
+  section.append(node('p', 'detail-label', 'COMPARE THE RECORDED FRAMES'));
+  const controls = node('div', 'frame-controls'), label = node('label', '', `Compare ${visual.subject} by day`);
+  const input = node('input'), output = node('output', 'frame-day');
+  input.type = 'range'; input.min = '0'; input.max = String(visual.recorded.length - 1); input.step = '1';
+  input.value = String(index); input.id = `frame-day-${currentId}-${state.testId}`; label.htmlFor = input.id;
+  output.setAttribute('for', input.id);
+  controls.append(label, output, input);
+  section.append(controls);
+  const views = node('div', 'frame-views');
+  for (const [branch, title] of [['recorded', 'Recorded world'], ['replay', 'Chosen reconstruction']]) {
+    const card = node('figure', 'frame-card'); card.dataset.branch = branch;
+    card.append(node('figcaption', '', title));
+    const canvas = node('canvas', 'frame-map'); canvas.setAttribute('role', 'img');
+    card.append(canvas, node('dl', 'frame-stats')); views.append(card);
+  }
+  section.append(views, node('p', 'frame-note', 'Dots are recorded daily positions. Dashed lines join those observations.'));
+  root.append(section);
+  const update = () => {
+    const selected = Number(input.value);
+    state.visualFrames.set(state.testId, selected);
+    output.textContent = `Day ${visual.recorded[selected].day}`;
+    input.setAttribute('aria-valuetext', output.textContent);
+    for (const card of views.children) {
+      const frame = visual[card.dataset.branch][selected], stats = card.querySelector('.frame-stats');
+      const crossing = frame.bridgeOpen ? 'Open' : `Closed (${quantity(frame.bridgeRepair)}/${currentCase().map.bridge.required})`;
+      stats.replaceChildren();
+      for (const [label, value] of [['Position', `(${frame.x}, ${frame.y})`], ['Food', quantity(frame.food)], ['Timber', quantity(frame.wood)], ['Crossing', crossing]]) {
+        const row = node('div'); row.append(node('dt', '', label), node('dd', '', value)); stats.append(row);
+      }
+      card.querySelector('canvas').setAttribute('aria-label', `${visual.subject}, ${card.dataset.branch === 'recorded' ? 'recorded world' : 'chosen reconstruction'}, day ${frame.day}, position ${frame.x}, ${frame.y}, food ${quantity(frame.food)}, timber ${quantity(frame.wood)}, crossing ${crossing}`);
+      drawFrameMap(card.querySelector('canvas'), visual[card.dataset.branch], selected, card.dataset.branch);
+    }
+  };
+  input.addEventListener('input', update);
+  update();
+}
+
+function paintPatch(ctx, resource, x, y, radius) {
+  ctx.fillStyle = resource === 'food' ? '#b49b48' : '#5b8158';
+  ctx.beginPath();
+  if (resource === 'food') ctx.arc(x, y, radius, 0, Math.PI * 2);
+  else { ctx.moveTo(x, y - radius); ctx.lineTo(x + radius, y); ctx.lineTo(x, y + radius); ctx.lineTo(x - radius, y); ctx.closePath(); }
+  ctx.fill();
+}
+
+function drawFrameMap(canvas, frames, selected, branch) {
+  const map = currentCase().map, rect = canvas.getBoundingClientRect();
+  if (!rect.width) return;
+  const dpr = Math.min(window.devicePixelRatio || 1, 2), width = rect.width, height = rect.height;
+  canvas.width = Math.round(width * dpr); canvas.height = Math.round(height * dpr);
+  const ctx = canvas.getContext('2d'); ctx.scale(dpr, dpr);
+  ctx.fillStyle = '#cde2df'; ctx.fillRect(0, 0, width, height);
+  const tile = Math.min((width - 14) / map.width, (height - 14) / map.height);
+  const ox = (width - tile * map.width) / 2, oy = (height - tile * map.height) / 2;
+  for (const cell of map.cells) {
+    if (cell.terrain === 'land') {
+      ctx.fillStyle = (cell.x * 7 + cell.y * 11) % 8 < 3 ? '#d3d7a9' : '#e0dfb8';
+      ctx.fillRect(ox + cell.x * tile, oy + cell.y * tile, tile + .3, tile + .3);
+    }
+    if (cell.resource) {
+      paintPatch(ctx, cell.resource, ox + (cell.x + .5) * tile, oy + (cell.y + .5) * tile, Math.max(1.2, tile * .19));
+    }
+  }
+  const frame = frames[selected], bridge = map.bridge, bx = ox + bridge.x * tile, by = oy + bridge.y * tile;
+  ctx.fillStyle = frame.bridgeOpen ? '#9b7753' : '#859996';
+  ctx.fillRect(bx, by + tile * .27, tile * 2, tile * .46);
+  if (!frame.bridgeOpen) {
+    ctx.strokeStyle = '#aa613b'; ctx.lineWidth = 1.5; ctx.beginPath();
+    ctx.moveTo(bx + tile * .6, by + tile * .15); ctx.lineTo(bx + tile * 1.4, by + tile * .85);
+    ctx.moveTo(bx + tile * 1.4, by + tile * .15); ctx.lineTo(bx + tile * .6, by + tile * .85); ctx.stroke();
+  }
+  const color = branch === 'recorded' ? '#246458' : '#c67440';
+  // Join observed daily endpoints only; no interpolated simulation or future trail.
+  ctx.strokeStyle = color; ctx.lineWidth = 1.8; ctx.setLineDash([3, 3]); ctx.beginPath();
+  for (let index = 0; index <= selected; index++) {
+    const point = frames[index], x = ox + (point.x + .5) * tile, y = oy + (point.y + .5) * tile;
+    if (index) ctx.lineTo(x, y); else ctx.moveTo(x, y);
+  }
+  if (selected > 0) ctx.stroke(); ctx.setLineDash([]);
+  for (let index = 0; index <= selected; index++) {
+    const point = frames[index]; ctx.fillStyle = color; ctx.beginPath();
+    ctx.arc(ox + (point.x + .5) * tile, oy + (point.y + .5) * tile, index === selected ? 4.5 : 2, 0, Math.PI * 2); ctx.fill();
+    if (index === selected) { ctx.strokeStyle = '#fffdf3'; ctx.lineWidth = 1.3; ctx.stroke(); }
+  }
+}
+
+function redrawVisual() {
+  const state = currentState(), visual = selectedTest()?.result.visual;
+  if (!visual || !state.testedIds.has(state.testId)) return;
+  const index = state.visualFrames.get(state.testId) ?? visual.recorded.length - 1;
+  for (const card of $('test-result').querySelectorAll('.frame-card'))
+    drawFrameMap(card.querySelector('canvas'), visual[card.dataset.branch], index, card.dataset.branch);
+}
+
+function renderResolution() {
+  const c = currentCase(), state = currentState(), root = $('resolution');
+  root.replaceChildren();
+  root.hidden = !state.resolved;
+  if (!state.resolved) return;
+  // Solution fields enter the DOM only after judgeCase confirms the submitted evidence.
+  root.append(node('p', 'eyebrow', 'CASE RESOLVED'), node('h3', '', 'The verified chain'),
+    node('p', '', c.solution.explanation));
+  const timeline = node('ol');
+  for (const entry of c.solution.timeline) timeline.append(node('li', '', entry));
+  root.append(timeline);
+  const actions = node('div', 'resolution-actions');
+  const download = node('button', '', '↓ Save the selected reconstruction');
+  download.type = 'button';
+  download.addEventListener('click', () => {
+    try {
+      const comparison = c.getComparison(state.testId);
+      const serialized = serializeComparison(comparison);
+      const url = URL.createObjectURL(new Blob([serialized], { type: 'application/json' }));
+      const link = node('a');
+      link.href = url;
+      link.download = `common-ground-${c.id}-${state.testId}-resolved.json`;
+      link.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      notice(comparison.measurementDay === undefined ?
+        'Saved the full comparison. Open it in the island sandbox to inspect the complete histories.' :
+        `Saved the starting comparison. In the sandbox, advance to day ${comparison.measurementDay} to inspect the selected measurement.`);
+    } catch (error) { notice(`Could not save this reconstruction: ${error.message}`); }
+  });
+  const sandbox = node('a', 'replay-link', 'Open the island sandbox ↗');
+  sandbox.href = './standalone.html';
+  sandbox.target = '_blank';
+  sandbox.rel = 'noopener';
+  const next = book.find(item => !investigations.get(item.id).resolved);
+  actions.append(download, sandbox);
+  if (next) {
+    const button = node('button', '', 'Open another case →');
+    button.type = 'button';
+    button.addEventListener('click', () => {
+      currentId = next.id;
+      renderCase();
+      $('case-sheet').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    actions.append(button);
+  }
+  root.append(actions);
+}
+
+function drawMap() {
+  const c = currentCase(), state = currentState(), canvas = $('case-map'), rect = canvas.getBoundingClientRect();
+  canvas.setAttribute('aria-label', `${c.title}: food patches are circles, timber patches are diamonds. ${c.map.markers.map(m => `${m.label} at (${m.x}, ${m.y})`).join('; ')}. The textual clues describe the relevant quantities and dates.`);
+  if (!rect.width) return;
+  const dpr = Math.min(window.devicePixelRatio || 1, 2), width = rect.width, height = rect.height;
+  canvas.width = Math.round(width * dpr); canvas.height = Math.round(height * dpr);
+  const ctx = canvas.getContext('2d'); ctx.scale(dpr, dpr);
+  ctx.fillStyle = '#cde2df'; ctx.fillRect(0, 0, width, height);
+  ctx.strokeStyle = '#b9d5d0'; ctx.lineWidth = .6;
+  for (let y = 12; y < height; y += 19) {
+    ctx.beginPath();
+    for (let x = 0; x < width; x += 8) {
+      const wave = y + Math.sin(x / 32 + y / 10) * 2;
+      if (x) ctx.lineTo(x, wave); else ctx.moveTo(x, wave);
+    }
+    ctx.stroke();
+  }
+  const tile = Math.min((width - 28) / c.map.width, (height - 28) / c.map.height);
+  const ox = (width - tile * c.map.width) / 2, oy = (height - tile * c.map.height) / 2;
+  for (const cell of c.map.cells) {
+    if (cell.terrain === 'land') {
+      ctx.fillStyle = (cell.x * 7 + cell.y * 11) % 8 < 3 ? '#d3d7a9' : '#e0dfb8';
+      ctx.fillRect(ox + cell.x * tile, oy + cell.y * tile, tile + .3, tile + .3);
+    }
+    if (cell.resource) {
+      paintPatch(ctx, cell.resource, ox + (cell.x + .5) * tile, oy + (cell.y + .5) * tile, Math.max(1.8, tile * .2));
+    }
+  }
+  if (c.map.bridge) {
+    const bridge = c.map.bridge, x = ox + bridge.x * tile, y = oy + bridge.y * tile;
+    ctx.fillStyle = bridge.open ? '#9b7753' : '#859996';
+    ctx.fillRect(x, y + tile * .28, tile * 2, tile * .44);
+    if (bridge.open) {
+      ctx.strokeStyle = '#715d43'; ctx.lineWidth = .9;
+      for (let n = 0; n < 8; n++) {
+        ctx.beginPath(); ctx.moveTo(x + n * tile / 4, y + tile * .28);
+        ctx.lineTo(x + n * tile / 4, y + tile * .72); ctx.stroke();
+      }
+    } else {
+      ctx.fillStyle = '#cde2df'; ctx.fillRect(x + tile * .65, y + tile * .2, tile * .7, tile * .6);
+      ctx.strokeStyle = '#aa613b'; ctx.lineWidth = 2;
+      ctx.beginPath(); ctx.moveTo(x + tile * .7, y + tile * .2); ctx.lineTo(x + tile * 1.3, y + tile * .8);
+      ctx.moveTo(x + tile * 1.3, y + tile * .2); ctx.lineTo(x + tile * .7, y + tile * .8); ctx.stroke();
+    }
+  }
+  if (state.highlight) {
+    ctx.strokeStyle = '#b67a39'; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.arc(ox + (state.highlight.x + .5) * tile, oy + (state.highlight.y + .5) * tile, tile * .7, 0, Math.PI * 2); ctx.stroke();
+  }
+  c.map.markers.forEach((marker, index) => {
+    const x = ox + (marker.x + .5) * tile, y = oy + (marker.y + .5) * tile;
+    ctx.fillStyle = '#1c5550'; ctx.strokeStyle = '#fffdf3'; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.arc(x, y, Math.max(7, tile * .42), 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+    ctx.fillStyle = '#fffdf3'; ctx.font = 'bold 9px Arial'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(String(index + 1), x, y);
+  });
+}
+
+function renderCase() {
+  const c = currentCase(), state = currentState();
+  renderCovers();
+  $('case-number').textContent = `CASE ${String(book.indexOf(c) + 1).padStart(2, '0')} / ${String(book.length).padStart(2, '0')}`;
+  $('case-title').textContent = c.title;
+  $('case-subtitle').textContent = c.subtitle;
+  $('case-status').textContent = state.resolved ? 'RESOLVED' : 'OPEN CASE';
+  $('case-question').textContent = c.question;
+  $('case-brief').textContent = c.brief;
+  $('case-rules').replaceChildren(...c.rules.map(rule => node('li', '', rule)));
+  const bridge = c.map.bridge;
+  $('map-bridge-state').textContent = bridge ? bridge.open ? 'Crossing open' :
+    `Crossing closed · ${Number((bridge.required - bridge.repair).toFixed(1))} timber needed` : '';
+  $('map-markers').replaceChildren(...c.map.markers.map(marker => node('li', '', marker.label)));
+
+  renderClues(); renderPinned();
+  renderChoices($('hypotheses'), c.hypotheses, 'hypothesis');
+  renderChoices($('predictions'), c.predictions, 'prediction');
+  renderReconstruction(); renderControls(); renderResolution(); drawMap();
+}
+
+$('hypothesis-form').addEventListener('submit', event => event.preventDefault());
+$('prediction-form').addEventListener('submit', event => event.preventDefault());
+$('reconstruction-choice').addEventListener('change', () => {
+  const state = currentState();
+  state.testId = $('reconstruction-choice').value;
+  state.feedback = '';
+  renderReconstruction(); renderControls();
+});
+$('run-test').addEventListener('click', () => {
+  const state = currentState();
+  if (!state.testId || !state.prediction || state.resolved || state.testedIds.has(state.testId)) return;
+  state.recordedPredictions.set(state.testId, state.prediction);
+  state.testedIds.add(state.testId);
+  state.feedback = '';
+  renderTestHistory(); renderTestResult(); renderControls();
+  notice('Reconstruction recorded. Compare its result with the prediction, or try another controlled change.');
+});
+$('submit-case').addEventListener('click', () => {
+  const c = currentCase(), state = currentState();
+  if (state.resolved || !state.testedIds.has(state.testId) || state.pinned.size !== 2) return;
+  const verdict = judgeCase(c, { hypothesis: state.hypothesis, prediction: state.prediction,
+    evidence: [...state.pinned], testId: state.testId, testedIds: [...state.testedIds],
+    tested: state.testedIds.has(state.testId) });
+  state.feedback = verdict.feedback;
+  if (verdict.correct) {
+    state.resolved = true;
+    renderCase();
+    notice(`${c.title} resolved. The verified causal chain is now available below.`);
+    $('resolution').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } else {
+    renderControls();
+    notice('The case remains open. You can revise and try again without a penalty.');
+  }
+});
+let resizeFrame;
+window.addEventListener('resize', () => {
+  cancelAnimationFrame(resizeFrame);
+  resizeFrame = requestAnimationFrame(() => { drawMap(); redrawVisual(); });
+});
+renderCase();
+</script>
+</body></html>

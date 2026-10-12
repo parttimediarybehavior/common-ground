@@ -1,0 +1,17 @@
+{
+  "name": "common-ground",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Five offline causal investigations in a replayable simulated island.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node scripts/bundle.js",
+    "test": "node tests/run.js",
+    "serve": "python3 server.py",
+    "build:site": "npm run build && node scripts/site.js"
+  }
+}

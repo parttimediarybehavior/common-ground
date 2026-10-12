@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Common Ground · The Casebook</title><link rel="stylesheet" href="./casebook.css"></head>
+<body>
+<header class="masthead"><a class="brand" href="#case-covers"><span aria-hidden="true">◈</span> COMMON GROUND <small>THE CASEBOOK</small></a><p id="progress" aria-live="polite">Opening the casebook…</p></header>
+<main>
+<section class="welcome"><div><p class="eyebrow">FIELD NOTES FROM A SMALL WORLD</p><h1>Every change leaves a trace.</h1><p>Pull one thread in a simulated island, replay the same world, and see whether you were right. Start with The Untaken Harvest, or choose The Detour for a short tutorial.</p></div><span class="folio-mark" aria-hidden="true"><span id="folio-count"></span><br><small>CASE FILES</small></span></section>
+<section class="how-it-works" aria-label="How an investigation works"><h2>How a case works</h2><p>Inspect clues and pin two records. Choose an explanation and a controlled change, record your prediction (uncertain is welcome), then run the replay. Compare the result, revise your conclusion and submit.</p><p class="session-note">Progress lasts for this page session. Refreshing or reopening starts over. Resolved cases can export their full replay to the sandbox.</p></section>
+<nav id="case-covers" class="case-covers" aria-label="Choose a case"></nav>
+<section id="case-sheet" class="case-sheet" aria-label="Active investigation">
+<div class="case-heading"><div><p id="case-number" class="eyebrow"></p><h2 id="case-title"></h2><p id="case-subtitle" class="case-subtitle"></p></div><span id="case-status" class="case-status">OPEN CASE</span></div>
+<div class="investigation-grid"><div class="evidence-column"><section class="brief"><p id="case-question" class="question"></p><p id="case-brief"></p><details class="rules"><summary>Known world rules</summary><ul id="case-rules"></ul></details></section>
+<figure class="map-panel"><div class="map-caption"><p class="eyebrow">THE RELEVANT GROUND</p><span>Numbered marks match the notes below</span></div><canvas id="case-map" role="img" aria-label="Case map; numbered markers are listed below"></canvas><figcaption><div class="map-legend"><span><i class="food"></i> Food · circle</span><span><i class="wood"></i> Timber · diamond</span><span id="map-bridge-state"></span></div><ol id="map-markers"></ol></figcaption></figure>
+<section class="clue-section"><div class="section-heading"><div><p class="eyebrow">INSPECT THE RECORD</p><h3>The evidence</h3></div><p id="clue-progress"></p></div><p class="section-note">Open any clue. Pin two that support your explanation.</p><div id="clue-cards" class="clue-cards"></div></section></div>
+<aside class="reasoning-column" aria-label="Your investigation"><section class="workpad"><p class="eyebrow">YOUR WORKING THEORY</p><h3>What explains the outcome?</h3><form id="hypothesis-form"><fieldset><legend class="sr-only">Choose a hypothesis</legend><div id="hypotheses"></div></fieldset></form><div class="pinned-heading"><p class="eyebrow">PINNED EVIDENCE</p><span id="pin-count">0 / 2</span></div><ul id="pinned-clues"></ul></section>
+<section class="reconstruction"><p class="eyebrow">CONTROLLED RECONSTRUCTION</p><h3>Try one change.</h3><label class="test-selector-label" for="reconstruction-choice">Choose a reconstruction</label><select id="reconstruction-choice"><option value="">Choose a controlled change…</option></select><p id="reconstruction-prompt"></p><details class="unchanged"><summary>What stays the same</summary><ul id="reconstruction-unchanged"></ul></details><form id="prediction-form"><fieldset><legend class="sr-only">Choose a prediction</legend><div id="predictions"></div></fieldset></form><button id="run-test" class="primary" disabled>Test this prediction</button><p id="test-hint" class="hint">Choose a reconstruction and record a prediction first.</p><div id="test-history"></div><div id="test-result" class="test-result" aria-live="polite"></div></section>
+<section class="submission"><button id="submit-case" class="primary" disabled>Submit your explanation</button><p id="submission-hint" class="hint"></p><p id="feedback" role="status" aria-live="polite"></p></section></aside></div>
+<section id="resolution" class="resolution" aria-live="polite" hidden></section>
+</section>
+<p id="notice" class="notice" role="status" aria-live="polite"></p>
+<footer><a href="./standalone.html">Explore the island sandbox ↗</a><span>COMMON GROUND · EXPERIMENTAL CASEBOOK</span><span>Programmed rules. Recorded evidence. No generated witnesses.</span></footer>
+</main><script type="module" src="./casebook.js"></script>
+</body></html>
