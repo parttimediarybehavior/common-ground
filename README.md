@@ -8,6 +8,8 @@ Common Ground is a small experimental casebook about cause and effect. Its resid
 
 ## Play
 
+**[Play Common Ground in your browser](https://common-ground-fawn.vercel.app/)** · [Open the island sandbox](https://common-ground-fawn.vercel.app/standalone.html)
+
 Download `casebook-standalone.html` and open it in a modern browser. For the sandbox and export workflow, also download `standalone.html` into the same folder. It works offline, with no installation, account or model calls. A static host can serve `index.html`, which is the same casebook.
 
 Start with **The Untaken Harvest**: two ways of interrupting the same handover have different later consequences. For a shorter tutorial, choose **The Detour**.
@@ -48,6 +50,8 @@ npm test
 ```
 
 The build produces `standalone.html` from `sandbox.html`, and `casebook-standalone.html` from `casebook.html`; it also copies the casebook to `index.html`. Generated files are included so visitors can play without building.
+
+For static deployment, `npm run build:site` writes only the three standalone player pages to `dist/`. The included Vercel configuration uses that output directory and supplies security response headers; no backend or API keys are needed.
 
 An optional Python 3 local preview serves an explicit asset list on loopback:
 
